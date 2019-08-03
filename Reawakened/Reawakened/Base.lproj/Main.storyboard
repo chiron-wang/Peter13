@@ -1,0 +1,1868 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MUX-Um-sWT">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RewakenedViewController-->
+        <scene sceneID="706-KJ-yaI">
+            <objects>
+                <viewController title="RewakenedViewController" id="Xb9-5y-1RH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dan-aE-4FT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book1" translatesAutoresizingMaskIntoConstraints="NO" id="xtQ-no-wUW">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xtQ-no-wUW" firstAttribute="top" secondItem="HbE-3H-cvh" secondAttribute="top" id="Bo4-OG-6oZ"/>
+                            <constraint firstItem="HbE-3H-cvh" firstAttribute="bottom" secondItem="xtQ-no-wUW" secondAttribute="bottom" id="Uo4-Le-gYN"/>
+                            <constraint firstItem="xtQ-no-wUW" firstAttribute="leading" secondItem="dan-aE-4FT" secondAttribute="leading" id="bbt-z5-rb6"/>
+                            <constraint firstAttribute="trailing" secondItem="xtQ-no-wUW" secondAttribute="trailing" id="bnI-cO-SQ3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HbE-3H-cvh"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="The Reawakened Series" id="hcq-8O-yDO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yhy-Pe-tcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4422" y="-1291"/>
+        </scene>
+        <!--ReWakened-->
+        <scene sceneID="ert-v9-88f">
+            <objects>
+                <navigationController title="ReWakened" automaticallyAdjustsScrollViewInsets="NO" id="3BE-XV-2Kw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="tab1" id="Bcd-ll-F9U"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8yT-Ob-hFC">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xb9-5y-1RH" kind="relationship" relationship="rootViewController" id="cxI-dq-osp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hdg-dk-QDw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3512" y="-1291"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ntH-H5-WMb">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="MUX-Um-sWT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tkN-fn-r5L">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="3BE-XV-2Kw" kind="relationship" relationship="viewControllers" id="FaO-ee-esi"/>
+                        <segue destination="OsE-a5-ixi" kind="relationship" relationship="viewControllers" id="5LH-rr-OUi"/>
+                        <segue destination="fex-kY-gLo" kind="relationship" relationship="viewControllers" id="xL6-QO-6ZH"/>
+                        <segue destination="WLS-Kc-Lot" kind="relationship" relationship="viewControllers" id="COb-Vb-SvU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ijH-JP-HPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3513.04347826087" y="-540.48913043478262"/>
+        </scene>
+        <!--PoemTableViewController-->
+        <scene sceneID="PSG-Kf-e82">
+            <objects>
+                <tableViewController title="PoemTableViewController" id="7N9-6c-rPK" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="if5-Vp-zH6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection headerTitle="The Reawakened Series 1" id="9QZ-Fw-Hqo">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell1" rowHeight="206" id="fOC-m8-LNC">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="206"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fOC-m8-LNC" id="mNO-eZ-JxE">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="205.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Book1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="439-N5-ynp">
+                                                    <rect key="frame" x="20" y="0.0" width="136" height="205.66666666666666"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="136" id="AFY-Zz-ymT"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="THE WINE OF LOVE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RvA-eq-Qwe">
+                                                    <rect key="frame" x="256.33333333333331" y="95" width="99.666666666666686" height="15.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="RvA-eq-Qwe" firstAttribute="centerY" secondItem="mNO-eZ-JxE" secondAttribute="centerY" id="Fma-55-x36"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RvA-eq-Qwe" secondAttribute="trailing" constant="20" symbolic="YES" id="Jbg-vm-Xe5"/>
+                                                <constraint firstItem="RvA-eq-Qwe" firstAttribute="leading" secondItem="439-N5-ynp" secondAttribute="trailing" constant="100.33333333333331" id="OFP-S7-mYW"/>
+                                                <constraint firstItem="439-N5-ynp" firstAttribute="leading" secondItem="mNO-eZ-JxE" secondAttribute="leadingMargin" id="PNN-fC-QG6"/>
+                                                <constraint firstAttribute="bottom" secondItem="439-N5-ynp" secondAttribute="bottom" id="f5u-Ol-3YY"/>
+                                                <constraint firstItem="439-N5-ynp" firstAttribute="top" secondItem="mNO-eZ-JxE" secondAttribute="top" id="psu-vb-b9M"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Ovt-va-U9u" kind="show" id="Mj4-kb-DZ3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="The Reawakened Series 2" id="oMc-YY-VKv">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell1" rowHeight="206" id="yTc-Lc-vsB">
+                                        <rect key="frame" x="0.0" y="262" width="414" height="206"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yTc-Lc-vsB" id="gzJ-h9-xij">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="205.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Book2" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rPR-o0-ukO">
+                                                    <rect key="frame" x="20" y="0.0" width="136" height="205.66666666666666"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="136" id="1TR-xK-3mt"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcA-BI-NmZ">
+                                                    <rect key="frame" x="184" y="87.333333333333329" width="164.66666666666663" height="31.333333333333329"/>
+                                                    <string key="text">A WOMAN’S LOST LOVE 
+An Ancient Egyptian Love Poem</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="rPR-o0-ukO" secondAttribute="bottom" id="2Xx-EP-IaX"/>
+                                                <constraint firstItem="rPR-o0-ukO" firstAttribute="top" secondItem="gzJ-h9-xij" secondAttribute="top" id="JUU-7x-aXn"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bcA-BI-NmZ" secondAttribute="trailing" symbolic="YES" id="Qvf-nR-iZx"/>
+                                                <constraint firstItem="bcA-BI-NmZ" firstAttribute="centerY" secondItem="gzJ-h9-xij" secondAttribute="centerY" id="Soc-hk-bbz"/>
+                                                <constraint firstItem="rPR-o0-ukO" firstAttribute="leading" secondItem="gzJ-h9-xij" secondAttribute="leadingMargin" id="Sya-YD-wf8"/>
+                                                <constraint firstItem="bcA-BI-NmZ" firstAttribute="leading" secondItem="rPR-o0-ukO" secondAttribute="trailing" constant="28" id="qBi-aB-fPw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ydk-hz-ZqP" kind="show" id="zP7-dF-v0c"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="The Reawakened Series 3" id="1bJ-kc-uVi">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell1" rowHeight="206" id="sVG-s0-nKv">
+                                        <rect key="frame" x="0.0" y="496" width="414" height="206"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sVG-s0-nKv" id="it6-ss-Kor">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="205.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Book3" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tTO-5Y-Fl4">
+                                                    <rect key="frame" x="20" y="0.0" width="136" height="205.66666666666666"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="136" id="oe9-EQ-quu"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="The Snare of Love" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2o-iz-Flk">
+                                                    <rect key="frame" x="266.33333333333331" y="95" width="89.666666666666686" height="15.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tTO-5Y-Fl4" firstAttribute="top" secondItem="it6-ss-Kor" secondAttribute="top" id="D6t-05-w1T"/>
+                                                <constraint firstItem="u2o-iz-Flk" firstAttribute="centerY" secondItem="it6-ss-Kor" secondAttribute="centerY" id="Eyz-az-7Jb"/>
+                                                <constraint firstItem="u2o-iz-Flk" firstAttribute="leading" secondItem="tTO-5Y-Fl4" secondAttribute="trailing" constant="110.33333333333331" id="Rt7-Qw-Fd9"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="u2o-iz-Flk" secondAttribute="trailing" symbolic="YES" id="l5V-Tc-9k9"/>
+                                                <constraint firstItem="tTO-5Y-Fl4" firstAttribute="leading" secondItem="it6-ss-Kor" secondAttribute="leadingMargin" id="qSy-uE-Exv"/>
+                                                <constraint firstAttribute="bottom" secondItem="tTO-5Y-Fl4" secondAttribute="bottom" id="vvC-dM-pRj"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="RTr-h2-tlZ" kind="show" id="X0z-T5-lj0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="7N9-6c-rPK" id="DzG-UL-YIw"/>
+                            <outlet property="delegate" destination="7N9-6c-rPK" id="hFM-IO-8YM"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Love Story" id="lLZ-eD-7oV"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kdm-yh-aY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5268.115942028986" y="-540.48913043478262"/>
+        </scene>
+        <!--Poem-->
+        <scene sceneID="Cmh-wE-5CB">
+            <objects>
+                <navigationController title="Poem" automaticallyAdjustsScrollViewInsets="NO" id="OsE-a5-ixi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="kvf-dl-Qct"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jzv-E6-bmt">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7N9-6c-rPK" kind="relationship" relationship="rootViewController" id="E9b-DI-ldj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iA7-Zc-rPO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4423.188405797102" y="-540.48913043478262"/>
+        </scene>
+        <!--Poem2-->
+        <scene sceneID="duP-I4-oKc">
+            <objects>
+                <viewController title="Poem2" id="ydk-hz-ZqP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QLZ-zo-tAe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E99-YC-3rh">
+                                <rect key="frame" x="0.0" y="64" width="414" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="7mA-bT-pCl"/>
+                                </constraints>
+                                <string key="text">A WOMAN’S LOST LOVE 
+An Ancient Egyptian Love Poem</string>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBY-sA-Gpw">
+                                <rect key="frame" x="0.0" y="338" width="414" height="398"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="398" id="sGR-ya-xdI"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lost! Lost! Lost! O lost my love to me! 
+He passes by my house, nor turns his head, 
+I deck myself with care; he does not see. 
+He loves me not. 
+Would God that I were dead! 
+God! God! God! O Amun, great of might! 
+My sacrifice and prayers, are they in vain? 
+I offer to thee all that can delight, 
+Hear thou my cry and bring my love again. 
+Sweet, sweet, sweet as honey in my mouth, 
+His kisses on my lips, my breast, my hair; 
+But now my heart is as the sun-scorched South, 
+Where lie the fields deserted, grey and bare.
+Come! Come! Come! And kiss me when I die, 
+For life, compelling life, is in thy breath; 
+And at that kiss, though in the tomb I lie, 
+I will arise and break the bands of Death.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Poem2" translatesAutoresizingMaskIntoConstraints="NO" id="ziX-o9-lkO">
+                                <rect key="frame" x="0.0" y="147" width="414" height="195"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ziX-o9-lkO" firstAttribute="top" secondItem="hJV-Sr-Ici" secondAttribute="top" constant="83" id="2t1-Bb-2uK"/>
+                            <constraint firstItem="E99-YC-3rh" firstAttribute="top" secondItem="hJV-Sr-Ici" secondAttribute="top" id="7AE-cE-rOL"/>
+                            <constraint firstItem="hJV-Sr-Ici" firstAttribute="bottom" secondItem="ziX-o9-lkO" secondAttribute="bottom" constant="345" id="Tjc-4G-vgP"/>
+                            <constraint firstAttribute="trailing" secondItem="E99-YC-3rh" secondAttribute="trailing" id="Tpj-1J-ZRg"/>
+                            <constraint firstItem="E99-YC-3rh" firstAttribute="leading" secondItem="QLZ-zo-tAe" secondAttribute="leading" id="Wsd-Zx-cP8"/>
+                            <constraint firstAttribute="bottom" secondItem="GBY-sA-Gpw" secondAttribute="bottom" id="acr-Kf-ReU"/>
+                            <constraint firstItem="E99-YC-3rh" firstAttribute="leading" secondItem="ziX-o9-lkO" secondAttribute="leading" id="dEk-yc-KPW"/>
+                            <constraint firstItem="E99-YC-3rh" firstAttribute="trailing" secondItem="GBY-sA-Gpw" secondAttribute="trailing" id="fSP-Pc-8qZ"/>
+                            <constraint firstItem="E99-YC-3rh" firstAttribute="leading" secondItem="GBY-sA-Gpw" secondAttribute="leading" id="iWE-WO-owi"/>
+                            <constraint firstItem="E99-YC-3rh" firstAttribute="trailing" secondItem="ziX-o9-lkO" secondAttribute="trailing" id="xr7-KA-GyS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hJV-Sr-Ici"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bjh-JU-FGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6042.0289855072469" y="-540.48913043478262"/>
+        </scene>
+        <!--Poem3-->
+        <scene sceneID="Pnj-nw-seh">
+            <objects>
+                <viewController title="Poem3" id="RTr-h2-tlZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bdf-Xx-f97">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Snare of Love" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9M-wk-6P3">
+                                <rect key="frame" x="0.0" y="64" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Y50-dI-4B7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Poem3" translatesAutoresizingMaskIntoConstraints="NO" id="BjQ-OJ-PK1">
+                                <rect key="frame" x="0.0" y="122" width="414" height="195"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3N8-Y5-o7C">
+                                <rect key="frame" x="0.0" y="324" width="414" height="412"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="412" id="YBr-1d-P9T"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">With snare in hand I hide me, 
+I wait and will not stir; 
+The beauteous birds of Araby Are perfumed 
+all with myrrh— Oh, all the birds of Araby, 
+That down to Egypt come, 
+Have wings that waft the fragrance 
+Of sweetly smelling gum! 
+I would that, when I snare them, 
+Together we could be, 
+I would that when I hear them 
+Alone I were with thee. 
+If thou wilt come,my dear one, 
+When birds are snared above,
+I’ll take thee and I’ll keep thee 
+Within the snare of love.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BjQ-OJ-PK1" firstAttribute="top" secondItem="j9M-wk-6P3" secondAttribute="bottom" constant="8" symbolic="YES" id="0bi-61-Jr5"/>
+                            <constraint firstItem="j9M-wk-6P3" firstAttribute="trailing" secondItem="3N8-Y5-o7C" secondAttribute="trailing" id="ARK-00-YsC"/>
+                            <constraint firstItem="j9M-wk-6P3" firstAttribute="trailing" secondItem="BjQ-OJ-PK1" secondAttribute="trailing" id="Ni4-rE-ggq"/>
+                            <constraint firstItem="j9M-wk-6P3" firstAttribute="leading" secondItem="Bdf-Xx-f97" secondAttribute="leading" id="QA0-ZX-sCt"/>
+                            <constraint firstItem="j9M-wk-6P3" firstAttribute="top" secondItem="qd8-Hu-EmG" secondAttribute="top" id="R1e-uW-qKl"/>
+                            <constraint firstItem="j9M-wk-6P3" firstAttribute="leading" secondItem="3N8-Y5-o7C" secondAttribute="leading" id="RZb-5t-aDw"/>
+                            <constraint firstItem="3N8-Y5-o7C" firstAttribute="top" secondItem="BjQ-OJ-PK1" secondAttribute="bottom" constant="7" id="bAI-ZQ-lcq"/>
+                            <constraint firstAttribute="trailing" secondItem="j9M-wk-6P3" secondAttribute="trailing" id="jm2-z1-tDP"/>
+                            <constraint firstAttribute="bottom" secondItem="3N8-Y5-o7C" secondAttribute="bottom" id="sbE-gm-lse"/>
+                            <constraint firstItem="j9M-wk-6P3" firstAttribute="leading" secondItem="BjQ-OJ-PK1" secondAttribute="leading" id="zGb-ce-kvd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qd8-Hu-EmG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bZ9-I9-Csk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6041" y="218"/>
+        </scene>
+        <!--Poem1-->
+        <scene sceneID="6AH-RG-NI8">
+            <objects>
+                <viewController title="Poem1" id="Ovt-va-U9u" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wdZ-bp-FAg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE WINE OF LOVE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Rn-J6-QTO">
+                                <rect key="frame" x="0.0" y="64" width="414" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Ya3-uD-f5f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPw-W1-mS6">
+                                <rect key="frame" x="0.0" y="338" width="414" height="398"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="398" id="amg-pw-Gga"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="An">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Ancient">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Egyptian">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Love">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Poem">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Oh">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="! ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="when">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="my">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="lady">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="comes">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">,  
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="And">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="I">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="with">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="love">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="behold">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="her">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">,  
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="I">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="take">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="her">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="into">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="my">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="beating">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="heart">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+ICAKA
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="And">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="in">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="my">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="arms">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="enfold">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="her">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">;
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="My">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="heart">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="is">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="filled">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="with">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="joy">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="divine">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+ICAKA
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="For">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="I">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="am">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="hers">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="and">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="she">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="is">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="mine">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Oh">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="! ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="when">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="her">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="soft">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="embraces">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+ICAKA
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Do">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="give">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="my">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="love">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="completeness">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">,
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="The">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="perfumes">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="of">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Arabia">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+ICAKA
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Anoint">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="me">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="with">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="their">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="sweetness">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">;
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="And">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="when">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="her">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="lips">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="are">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="pressed">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="to">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="mine">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="I">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="am">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="made">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="drunk">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="and">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="need">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="not">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="wine">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=".">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="ArialHebrew"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Poem1" translatesAutoresizingMaskIntoConstraints="NO" id="pI4-Gs-rkc">
+                                <rect key="frame" x="0.0" y="147" width="414" height="725.00000000000011"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2Rn-J6-QTO" secondAttribute="trailing" id="DR9-dg-kxh"/>
+                            <constraint firstItem="2Rn-J6-QTO" firstAttribute="leading" secondItem="wdZ-bp-FAg" secondAttribute="leading" id="G81-YB-8z4"/>
+                            <constraint firstItem="2Rn-J6-QTO" firstAttribute="leading" secondItem="pI4-Gs-rkc" secondAttribute="leading" id="Q9B-Cz-F22"/>
+                            <constraint firstItem="pI4-Gs-rkc" firstAttribute="top" secondItem="2Rn-J6-QTO" secondAttribute="bottom" constant="8" symbolic="YES" id="VHs-2p-GPs"/>
+                            <constraint firstItem="2Rn-J6-QTO" firstAttribute="top" secondItem="xvQ-Df-3td" secondAttribute="top" id="WDD-rw-ohN"/>
+                            <constraint firstItem="2Rn-J6-QTO" firstAttribute="trailing" secondItem="pI4-Gs-rkc" secondAttribute="trailing" id="XCl-0G-W21"/>
+                            <constraint firstItem="2Rn-J6-QTO" firstAttribute="trailing" secondItem="yPw-W1-mS6" secondAttribute="trailing" id="Y8g-RN-e6t"/>
+                            <constraint firstItem="2Rn-J6-QTO" firstAttribute="leading" secondItem="yPw-W1-mS6" secondAttribute="leading" id="ecc-nz-qmd"/>
+                            <constraint firstAttribute="bottom" secondItem="yPw-W1-mS6" secondAttribute="bottom" id="vfh-dp-7yQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xvQ-Df-3td"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NHp-57-6cM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6041" y="-1291"/>
+        </scene>
+        <!--YoutubeTableViewController-->
+        <scene sceneID="yBn-Zy-E0R">
+            <objects>
+                <tableViewController title="YoutubeTableViewController" id="kLA-6V-c88" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bjH-op-m2L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection headerTitle="The Reawakened Series 1" id="yF1-Nk-QfT">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="redraw" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell1" rowHeight="206" id="pxH-dQ-FVO">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="206"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pxH-dQ-FVO" id="1HE-Tq-tJ9">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="205.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book1" translatesAutoresizingMaskIntoConstraints="NO" id="MpV-dL-4sY">
+                                                    <rect key="frame" x="20" y="0.0" width="136" height="205.66666666666666"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="136" id="4Hu-UR-LIY"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rewakened" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xza-6J-WCp">
+                                                    <rect key="frame" x="219" y="92" width="106" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="VHh-OO-U3R"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="MpV-dL-4sY" firstAttribute="leading" secondItem="1HE-Tq-tJ9" secondAttribute="leadingMargin" id="6ap-tl-ync"/>
+                                                <constraint firstItem="Xza-6J-WCp" firstAttribute="leading" secondItem="MpV-dL-4sY" secondAttribute="trailing" constant="63" id="Nlm-aB-1n3"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Xza-6J-WCp" secondAttribute="trailing" constant="20" symbolic="YES" id="dYR-Yk-Ek3"/>
+                                                <constraint firstItem="Xza-6J-WCp" firstAttribute="centerY" secondItem="1HE-Tq-tJ9" secondAttribute="centerY" id="lcT-WM-6Hg"/>
+                                                <constraint firstItem="MpV-dL-4sY" firstAttribute="top" secondItem="1HE-Tq-tJ9" secondAttribute="top" id="pYl-ha-4zl"/>
+                                                <constraint firstAttribute="bottom" secondItem="MpV-dL-4sY" secondAttribute="bottom" id="s55-Da-3jj"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="The Reawakened Series 2" id="cMY-TL-BaJ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="redraw" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell1" rowHeight="206" id="75M-vf-Jmt">
+                                        <rect key="frame" x="0.0" y="262" width="414" height="206"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="75M-vf-Jmt" id="KEj-Ps-0oL">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="205.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book2" translatesAutoresizingMaskIntoConstraints="NO" id="sQ5-li-8ZU">
+                                                    <rect key="frame" x="20" y="0.0" width="136" height="205.66666666666666"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="136" id="UUW-6V-Eu3"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rewakened" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcO-cq-cYr">
+                                                    <rect key="frame" x="219" y="92" width="106" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="AJd-oK-R1s"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="sQ5-li-8ZU" firstAttribute="leading" secondItem="KEj-Ps-0oL" secondAttribute="leadingMargin" id="BPi-r5-mqR"/>
+                                                <constraint firstItem="xcO-cq-cYr" firstAttribute="centerY" secondItem="KEj-Ps-0oL" secondAttribute="centerY" id="I0f-Jl-scg"/>
+                                                <constraint firstItem="sQ5-li-8ZU" firstAttribute="top" secondItem="KEj-Ps-0oL" secondAttribute="top" id="Idf-LJ-CBx"/>
+                                                <constraint firstItem="xcO-cq-cYr" firstAttribute="leading" secondItem="sQ5-li-8ZU" secondAttribute="trailing" constant="63" id="WWJ-Af-ERT"/>
+                                                <constraint firstAttribute="bottom" secondItem="sQ5-li-8ZU" secondAttribute="bottom" id="bYk-ZQ-TcE"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xcO-cq-cYr" secondAttribute="trailing" constant="20" symbolic="YES" id="eXX-8Y-vRP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="The Reawakened Series 3" id="zVy-KD-rlT">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="redraw" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell1" rowHeight="206" id="OMN-Dj-PAX">
+                                        <rect key="frame" x="0.0" y="496" width="414" height="206"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OMN-Dj-PAX" id="wP2-Li-9iw">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="205.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book3" translatesAutoresizingMaskIntoConstraints="NO" id="3F4-FV-Y8D">
+                                                    <rect key="frame" x="20" y="0.0" width="136" height="205.66666666666666"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="136" id="Yd0-2T-ALB"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rewakened" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bE-qy-b7g">
+                                                    <rect key="frame" x="219" y="92" width="106" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="8iF-bm-DBZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5bE-qy-b7g" firstAttribute="leading" secondItem="3F4-FV-Y8D" secondAttribute="trailing" constant="63" id="AAP-hj-IWP"/>
+                                                <constraint firstAttribute="bottom" secondItem="3F4-FV-Y8D" secondAttribute="bottom" id="df8-xA-SiU"/>
+                                                <constraint firstItem="3F4-FV-Y8D" firstAttribute="top" secondItem="wP2-Li-9iw" secondAttribute="top" id="grG-pG-mWY"/>
+                                                <constraint firstItem="3F4-FV-Y8D" firstAttribute="leading" secondItem="wP2-Li-9iw" secondAttribute="leadingMargin" id="koR-KQ-07o"/>
+                                                <constraint firstItem="5bE-qy-b7g" firstAttribute="centerY" secondItem="wP2-Li-9iw" secondAttribute="centerY" id="tXF-tM-po8"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5bE-qy-b7g" secondAttribute="trailing" constant="20" symbolic="YES" id="vuJ-VN-elU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="kLA-6V-c88" id="tw2-GM-8V4"/>
+                            <outlet property="delegate" destination="kLA-6V-c88" id="8dG-lK-W9Z"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Movie" id="NFM-F8-Ip1"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H5f-tT-Oiz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3513" y="218"/>
+        </scene>
+        <!--YoutubeViewController-->
+        <scene sceneID="wta-0q-277">
+            <objects>
+                <viewController title="YoutubeViewController" id="Dx1-ql-D5B" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fJ3-IY-gfN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s9X-V3-OJj">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="s9X-V3-OJj" firstAttribute="leading" secondItem="00M-fS-ad3" secondAttribute="leading" id="SBU-Lo-Z6k"/>
+                            <constraint firstItem="00M-fS-ad3" firstAttribute="trailing" secondItem="s9X-V3-OJj" secondAttribute="trailing" id="Uk0-hX-edT"/>
+                            <constraint firstItem="s9X-V3-OJj" firstAttribute="top" secondItem="00M-fS-ad3" secondAttribute="top" id="Uy5-ht-2eK"/>
+                            <constraint firstItem="00M-fS-ad3" firstAttribute="bottom" secondItem="s9X-V3-OJj" secondAttribute="bottom" id="yM3-PG-VKA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="00M-fS-ad3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DRE-DK-cWz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4422" y="218"/>
+        </scene>
+        <!--Youtube-->
+        <scene sceneID="lut-po-xZZ">
+            <objects>
+                <navigationController title="Youtube" automaticallyAdjustsScrollViewInsets="NO" id="WLS-Kc-Lot" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Youtube" image="tab3" id="8jn-z3-6iZ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ng3-jN-5r9">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kLA-6V-c88" kind="relationship" relationship="rootViewController" id="Kdx-7t-BZ1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tyx-vI-u3n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2606" y="218"/>
+        </scene>
+        <!--Buy1ViewController-->
+        <scene sceneID="d45-7Q-Ond">
+            <objects>
+                <viewController title="Buy1ViewController" id="mT9-5C-PId" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KYW-BT-WoH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book1" translatesAutoresizingMaskIntoConstraints="NO" id="MXw-GF-X6x">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MXw-GF-X6x" firstAttribute="leading" secondItem="jky-In-M48" secondAttribute="leading" id="G6b-nE-yec"/>
+                            <constraint firstItem="MXw-GF-X6x" firstAttribute="trailing" secondItem="jky-In-M48" secondAttribute="trailing" id="cOU-uB-0y1"/>
+                            <constraint firstItem="MXw-GF-X6x" firstAttribute="top" secondItem="jky-In-M48" secondAttribute="top" id="cmm-Bv-tTJ"/>
+                            <constraint firstItem="MXw-GF-X6x" firstAttribute="bottom" secondItem="jky-In-M48" secondAttribute="bottom" id="iBr-dx-HRp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jky-In-M48"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RiN-hF-i8q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1399" y="-1291"/>
+        </scene>
+        <!--BuyTableViewController-->
+        <scene sceneID="rqh-Ke-dfe">
+            <objects>
+                <tableViewController title="BuyTableViewController" id="s4T-KX-pQL" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7va-of-lKu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection headerTitle="The Reawakened Series 1" id="Iv2-i2-dvK">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell1" rowHeight="206" id="C85-mt-mNx">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="206"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C85-mt-mNx" id="06c-9r-loC">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="205.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Book1" translatesAutoresizingMaskIntoConstraints="NO" id="l54-fI-Qy8">
+                                                    <rect key="frame" x="20" y="0.0" width="136" height="205.66666666666666"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QQ2-DF-lh4">
+                                                    <rect key="frame" x="256" y="0.0" width="100" height="205.66666666666666"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5R-CP-PYA">
+                                                            <rect key="frame" x="13" y="0.0" width="74" height="93.666666666666671"/>
+                                                            <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                            <state key="normal" title="Amazon"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFx-OF-eVH">
+                                                            <rect key="frame" x="26.666666666666686" y="56.000000000000007" width="47" height="93.666666666666686"/>
+                                                            <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                            <state key="normal" title="Kobo"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIc-zB-gsl">
+                                                            <rect key="frame" x="6.6666666666666856" y="112.33333333333334" width="87" height="93.333333333333343"/>
+                                                            <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                            <state key="normal" title="ReadMoo"/>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="ReI-MC-Os1"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="QQ2-DF-lh4" secondAttribute="trailing" constant="20" id="2sf-rq-GGh"/>
+                                                <constraint firstAttribute="bottom" secondItem="QQ2-DF-lh4" secondAttribute="bottom" id="USw-hD-pJC"/>
+                                                <constraint firstItem="QQ2-DF-lh4" firstAttribute="top" secondItem="06c-9r-loC" secondAttribute="top" id="UhS-PI-UTJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="mT9-5C-PId" kind="show" id="6Tk-bB-o6x"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="The Reawakened Series 2" id="2p8-NX-bHv">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell２" rowHeight="206" id="diP-PT-IPs">
+                                        <rect key="frame" x="0.0" y="262" width="414" height="206"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="diP-PT-IPs" id="eYJ-na-lBS">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="205.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Book2" translatesAutoresizingMaskIntoConstraints="NO" id="S7A-SW-Bko">
+                                                    <rect key="frame" x="20" y="0.0" width="136" height="205.66666666666666"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UAJ-FT-xYY">
+                                                    <rect key="frame" x="256" y="0.0" width="100" height="205.66666666666666"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pdj-4e-FRp">
+                                                            <rect key="frame" x="13" y="0.0" width="74" height="93.666666666666671"/>
+                                                            <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                            <state key="normal" title="Amazon"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqc-kF-doo">
+                                                            <rect key="frame" x="26.666666666666686" y="56.000000000000007" width="47" height="93.666666666666686"/>
+                                                            <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                            <state key="normal" title="Kobo"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y70-BQ-5l2">
+                                                            <rect key="frame" x="6.6666666666666856" y="112.33333333333334" width="87" height="93.333333333333343"/>
+                                                            <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                            <state key="normal" title="ReadMoo"/>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="y7C-sg-s9K"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="UAJ-FT-xYY" secondAttribute="bottom" id="3rH-7I-CFn"/>
+                                                <constraint firstAttribute="trailing" secondItem="UAJ-FT-xYY" secondAttribute="trailing" constant="20" id="FOy-7g-xyQ"/>
+                                                <constraint firstItem="UAJ-FT-xYY" firstAttribute="top" secondItem="eYJ-na-lBS" secondAttribute="top" id="s0I-uw-GY4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="cQl-en-8uL" kind="show" id="TMY-w6-daH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="The Reawakened Series 3" id="62H-RL-SFd">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell３" rowHeight="206" id="7RG-MI-v0g">
+                                        <rect key="frame" x="0.0" y="496" width="414" height="206"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7RG-MI-v0g" id="giZ-D5-Di8">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="205.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Book3" translatesAutoresizingMaskIntoConstraints="NO" id="85v-Jx-XPo">
+                                                    <rect key="frame" x="20" y="0.0" width="136" height="205.66666666666666"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bI4-6f-ytg">
+                                                    <rect key="frame" x="256" y="0.0" width="100" height="205.66666666666666"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJf-4a-VhF">
+                                                            <rect key="frame" x="13" y="0.0" width="74" height="93.666666666666671"/>
+                                                            <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                            <state key="normal" title="Amazon"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZl-9q-r36">
+                                                            <rect key="frame" x="26.666666666666686" y="56.000000000000007" width="47" height="93.666666666666686"/>
+                                                            <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                            <state key="normal" title="Kobo"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfz-HX-Huu">
+                                                            <rect key="frame" x="6.6666666666666856" y="112.33333333333334" width="87" height="93.333333333333343"/>
+                                                            <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                            <state key="normal" title="ReadMoo"/>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="OPQ-lL-Kyp"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="bI4-6f-ytg" secondAttribute="trailing" constant="20" id="0Lo-9I-blC"/>
+                                                <constraint firstItem="bI4-6f-ytg" firstAttribute="top" secondItem="giZ-D5-Di8" secondAttribute="top" id="YmX-2T-7ar"/>
+                                                <constraint firstAttribute="bottom" secondItem="bI4-6f-ytg" secondAttribute="bottom" id="m2d-SW-6GE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="yrM-Ef-7vo" kind="show" id="0yV-5e-8R9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="s4T-KX-pQL" id="dnc-t2-W3h"/>
+                            <outlet property="delegate" destination="s4T-KX-pQL" id="0jk-i2-uWg"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Shopping" id="dtP-XW-zY6"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NDJ-D2-CnZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2606" y="-1291"/>
+        </scene>
+        <!--Shopping-->
+        <scene sceneID="R5M-lP-kcO">
+            <objects>
+                <navigationController title="Shopping" automaticallyAdjustsScrollViewInsets="NO" id="fex-kY-gLo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Buy" image="tab4" id="I7i-1p-B71"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="58V-sH-YyA">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="s4T-KX-pQL" kind="relationship" relationship="rootViewController" id="U4M-Ri-P5N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sj7-r8-EzN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2606" y="-540"/>
+        </scene>
+        <!--Buy3ViewController-->
+        <scene sceneID="vbq-dt-MlH">
+            <objects>
+                <viewController title="Buy3ViewController" id="yrM-Ef-7vo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ox8-SX-tff">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book3" translatesAutoresizingMaskIntoConstraints="NO" id="Xbh-sl-pqL">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xbh-sl-pqL" firstAttribute="leading" secondItem="4yo-OX-X57" secondAttribute="leading" id="ENj-L8-wrK"/>
+                            <constraint firstItem="Xbh-sl-pqL" firstAttribute="top" secondItem="4yo-OX-X57" secondAttribute="top" id="OeY-oO-31D"/>
+                            <constraint firstItem="Xbh-sl-pqL" firstAttribute="trailing" secondItem="4yo-OX-X57" secondAttribute="trailing" id="Say-oy-QJv"/>
+                            <constraint firstItem="Xbh-sl-pqL" firstAttribute="bottom" secondItem="4yo-OX-X57" secondAttribute="bottom" id="vub-hs-ZsT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4yo-OX-X57"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r4q-TI-foJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1399" y="218"/>
+        </scene>
+        <!--Buy2ViewController-->
+        <scene sceneID="mnY-kR-Y8G">
+            <objects>
+                <viewController title="Buy2ViewController" id="cQl-en-8uL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yts-Cw-9wj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book2" translatesAutoresizingMaskIntoConstraints="NO" id="Ycc-Bq-bsh">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ycc-Bq-bsh" firstAttribute="trailing" secondItem="6mf-FY-XWl" secondAttribute="trailing" id="Fcr-63-tdF"/>
+                            <constraint firstItem="Ycc-Bq-bsh" firstAttribute="leading" secondItem="6mf-FY-XWl" secondAttribute="leading" id="LFN-E4-jp8"/>
+                            <constraint firstItem="Ycc-Bq-bsh" firstAttribute="bottom" secondItem="6mf-FY-XWl" secondAttribute="bottom" id="ulT-vg-G1t"/>
+                            <constraint firstItem="Ycc-Bq-bsh" firstAttribute="top" secondItem="6mf-FY-XWl" secondAttribute="top" id="zyu-DI-nFE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6mf-FY-XWl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kEj-1u-JBf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1399" y="-540"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Book1" width="554" height="790"/>
+        <image name="Book2" width="549" height="830"/>
+        <image name="Book3" width="546" height="830"/>
+        <image name="Poem1" width="1590" height="725"/>
+        <image name="Poem2" width="399" height="224"/>
+        <image name="Poem3" width="399" height="221"/>
+        <image name="tab1" width="29" height="29"/>
+        <image name="tab3" width="29" height="29"/>
+        <image name="tab4" width="29" height="29"/>
+    </resources>
+</document>
