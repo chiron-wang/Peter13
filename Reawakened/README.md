@@ -1,2 +1,3 @@
-The Reawakened Series
-https://github.com/chiron-wang/Peter13/blob/exercise/BlogImage/Rewakened/Screen Shot 2019-08-03 at 10.03.11 PM.png
+# The Reawakened Series
+
+https://github.com/chiron-wang/Peter13/blob/exercise/BlogImage/Rewakened/Screen%20Shot%202019-08-03%20at%2010.03.11%20PM.png
