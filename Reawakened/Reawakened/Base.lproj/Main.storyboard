@@ -1596,16 +1596,28 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3OA-rb-eQS">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book1" translatesAutoresizingMaskIntoConstraints="NO" id="MXw-GF-X6x">
                                 <rect key="frame" x="0.0" y="64" width="414" height="623"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="3OA-rb-eQS" firstAttribute="leading" secondItem="jky-In-M48" secondAttribute="leading" id="ARN-m8-ykO"/>
                             <constraint firstItem="MXw-GF-X6x" firstAttribute="leading" secondItem="jky-In-M48" secondAttribute="leading" id="G6b-nE-yec"/>
+                            <constraint firstItem="jky-In-M48" firstAttribute="trailing" secondItem="3OA-rb-eQS" secondAttribute="trailing" id="Jlx-W2-ipX"/>
                             <constraint firstItem="MXw-GF-X6x" firstAttribute="trailing" secondItem="jky-In-M48" secondAttribute="trailing" id="cOU-uB-0y1"/>
                             <constraint firstItem="MXw-GF-X6x" firstAttribute="top" secondItem="jky-In-M48" secondAttribute="top" id="cmm-Bv-tTJ"/>
+                            <constraint firstItem="3OA-rb-eQS" firstAttribute="top" secondItem="jky-In-M48" secondAttribute="top" id="fZA-SM-RWG"/>
                             <constraint firstItem="MXw-GF-X6x" firstAttribute="bottom" secondItem="jky-In-M48" secondAttribute="bottom" id="iBr-dx-HRp"/>
+                            <constraint firstItem="jky-In-M48" firstAttribute="bottom" secondItem="3OA-rb-eQS" secondAttribute="bottom" id="k8V-3I-vBy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jky-In-M48"/>
                     </view>
@@ -1618,155 +1630,259 @@ Cg
         <scene sceneID="rqh-Ke-dfe">
             <objects>
                 <tableViewController title="BuyTableViewController" id="s4T-KX-pQL" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7va-of-lKu">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="5" id="7va-of-lKu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <sections>
-                            <tableViewSection headerTitle="The Reawakened Series 1" id="Iv2-i2-dvK">
+                            <tableViewSection id="Iv2-i2-dvK">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell1" rowHeight="206" id="C85-mt-mNx">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="206"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell1" rowHeight="206" id="C85-mt-mNx">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="206"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C85-mt-mNx" id="06c-9r-loC">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="205.66666666666666"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="206"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Book1" translatesAutoresizingMaskIntoConstraints="NO" id="l54-fI-Qy8">
-                                                    <rect key="frame" x="20" y="0.0" width="136" height="205.66666666666666"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QQ2-DF-lh4">
-                                                    <rect key="frame" x="256" y="0.0" width="100" height="205.66666666666666"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYW-5C-lzz">
+                                                    <rect key="frame" x="20" y="11" width="374" height="184"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5R-CP-PYA">
-                                                            <rect key="frame" x="13" y="0.0" width="74" height="93.666666666666671"/>
-                                                            <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
-                                                            <state key="normal" title="Amazon"/>
-                                                        </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFx-OF-eVH">
-                                                            <rect key="frame" x="26.666666666666686" y="56.000000000000007" width="47" height="93.666666666666686"/>
-                                                            <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
-                                                            <state key="normal" title="Kobo"/>
-                                                        </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIc-zB-gsl">
-                                                            <rect key="frame" x="6.6666666666666856" y="112.33333333333334" width="87" height="93.333333333333343"/>
-                                                            <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
-                                                            <state key="normal" title="ReadMoo"/>
-                                                        </button>
+                                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Book1" translatesAutoresizingMaskIntoConstraints="NO" id="l54-fI-Qy8">
+                                                            <rect key="frame" x="40" y="0.0" width="136" height="184"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="136" id="vCg-Lc-UhP"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="70" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QQ2-DF-lh4">
+                                                            <rect key="frame" x="237" y="0.0" width="87" height="184"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5R-CP-PYA">
+                                                                    <rect key="frame" x="6.6666666666666856" y="0.0" width="74" height="34"/>
+                                                                    <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                                    <state key="normal" title="Amazon"/>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFx-OF-eVH">
+                                                                    <rect key="frame" x="20" y="75" width="47" height="34"/>
+                                                                    <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                                    <state key="normal" title="Kobo"/>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIc-zB-gsl">
+                                                                    <rect key="frame" x="0.0" y="150" width="87" height="34"/>
+                                                                    <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                                    <state key="normal" title="ReadMoo"/>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
                                                     </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="100" id="ReI-MC-Os1"/>
+                                                        <constraint firstAttribute="bottom" secondItem="l54-fI-Qy8" secondAttribute="bottom" id="3mQ-u9-1Da"/>
+                                                        <constraint firstAttribute="trailing" secondItem="QQ2-DF-lh4" secondAttribute="trailing" constant="50" id="6lA-KC-aIf"/>
+                                                        <constraint firstAttribute="bottom" secondItem="QQ2-DF-lh4" secondAttribute="bottom" id="ShF-rh-pdL"/>
+                                                        <constraint firstItem="QQ2-DF-lh4" firstAttribute="top" secondItem="aYW-5C-lzz" secondAttribute="top" id="ue2-4V-WLR"/>
+                                                        <constraint firstItem="l54-fI-Qy8" firstAttribute="top" secondItem="aYW-5C-lzz" secondAttribute="top" id="wD2-nu-2a4"/>
+                                                        <constraint firstItem="l54-fI-Qy8" firstAttribute="leading" secondItem="aYW-5C-lzz" secondAttribute="leading" constant="40" id="wtU-dW-Apa"/>
                                                     </constraints>
-                                                </stackView>
+                                                </view>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="QQ2-DF-lh4" secondAttribute="trailing" constant="20" id="2sf-rq-GGh"/>
-                                                <constraint firstAttribute="bottom" secondItem="QQ2-DF-lh4" secondAttribute="bottom" id="USw-hD-pJC"/>
-                                                <constraint firstItem="QQ2-DF-lh4" firstAttribute="top" secondItem="06c-9r-loC" secondAttribute="top" id="UhS-PI-UTJ"/>
+                                                <constraint firstItem="aYW-5C-lzz" firstAttribute="top" secondItem="06c-9r-loC" secondAttribute="topMargin" id="CRS-Oo-w1M"/>
+                                                <constraint firstItem="aYW-5C-lzz" firstAttribute="trailing" secondItem="06c-9r-loC" secondAttribute="trailingMargin" id="JOv-sB-qdX"/>
+                                                <constraint firstItem="aYW-5C-lzz" firstAttribute="leading" secondItem="06c-9r-loC" secondAttribute="leadingMargin" id="UYI-q8-7oF"/>
+                                                <constraint firstItem="aYW-5C-lzz" firstAttribute="bottom" secondItem="06c-9r-loC" secondAttribute="bottomMargin" id="ebq-BW-mvU"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <segue destination="mT9-5C-PId" kind="show" id="6Tk-bB-o6x"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="The Reawakened Series 2" id="2p8-NX-bHv">
+                            <tableViewSection id="nWf-8u-aVI">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell２" rowHeight="206" id="diP-PT-IPs">
-                                        <rect key="frame" x="0.0" y="262" width="414" height="206"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell1" rowHeight="206" id="rkd-EY-rpX">
+                                        <rect key="frame" x="0.0" y="206" width="414" height="206"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="diP-PT-IPs" id="eYJ-na-lBS">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="205.66666666666666"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rkd-EY-rpX" id="k6l-Rd-RP8">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="206"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Book2" translatesAutoresizingMaskIntoConstraints="NO" id="S7A-SW-Bko">
-                                                    <rect key="frame" x="20" y="0.0" width="136" height="205.66666666666666"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UAJ-FT-xYY">
-                                                    <rect key="frame" x="256" y="0.0" width="100" height="205.66666666666666"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lMc-jm-uc6">
+                                                    <rect key="frame" x="20" y="11" width="374" height="184"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pdj-4e-FRp">
-                                                            <rect key="frame" x="13" y="0.0" width="74" height="93.666666666666671"/>
-                                                            <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
-                                                            <state key="normal" title="Amazon"/>
-                                                        </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqc-kF-doo">
-                                                            <rect key="frame" x="26.666666666666686" y="56.000000000000007" width="47" height="93.666666666666686"/>
-                                                            <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
-                                                            <state key="normal" title="Kobo"/>
-                                                        </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y70-BQ-5l2">
-                                                            <rect key="frame" x="6.6666666666666856" y="112.33333333333334" width="87" height="93.333333333333343"/>
-                                                            <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
-                                                            <state key="normal" title="ReadMoo"/>
-                                                        </button>
+                                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Book2" translatesAutoresizingMaskIntoConstraints="NO" id="qMA-iT-XHL">
+                                                            <rect key="frame" x="40" y="0.0" width="136" height="184"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="136" id="ajv-JA-AwP"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="70" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ybL-5S-OOR">
+                                                            <rect key="frame" x="237" y="0.0" width="87" height="184"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPS-BP-ooJ">
+                                                                    <rect key="frame" x="6.6666666666666856" y="0.0" width="74" height="34"/>
+                                                                    <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                                    <state key="normal" title="Amazon"/>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PD6-Pe-qZe">
+                                                                    <rect key="frame" x="20" y="75" width="47" height="34"/>
+                                                                    <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                                    <state key="normal" title="Kobo"/>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLL-00-P1R">
+                                                                    <rect key="frame" x="0.0" y="150" width="87" height="34"/>
+                                                                    <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                                    <state key="normal" title="ReadMoo"/>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
                                                     </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="100" id="y7C-sg-s9K"/>
+                                                        <constraint firstItem="ybL-5S-OOR" firstAttribute="top" secondItem="lMc-jm-uc6" secondAttribute="top" id="3cA-mf-qdA"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ybL-5S-OOR" secondAttribute="bottom" id="7T2-OG-HVD"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ybL-5S-OOR" secondAttribute="trailing" constant="50" id="dca-fc-sLF"/>
+                                                        <constraint firstItem="qMA-iT-XHL" firstAttribute="top" secondItem="lMc-jm-uc6" secondAttribute="top" id="gGc-PS-R5V"/>
+                                                        <constraint firstItem="qMA-iT-XHL" firstAttribute="leading" secondItem="lMc-jm-uc6" secondAttribute="leading" constant="40" id="jgE-vF-t0Z"/>
+                                                        <constraint firstAttribute="bottom" secondItem="qMA-iT-XHL" secondAttribute="bottom" id="xoJ-Zh-5rD"/>
                                                     </constraints>
-                                                </stackView>
+                                                </view>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="UAJ-FT-xYY" secondAttribute="bottom" id="3rH-7I-CFn"/>
-                                                <constraint firstAttribute="trailing" secondItem="UAJ-FT-xYY" secondAttribute="trailing" constant="20" id="FOy-7g-xyQ"/>
-                                                <constraint firstItem="UAJ-FT-xYY" firstAttribute="top" secondItem="eYJ-na-lBS" secondAttribute="top" id="s0I-uw-GY4"/>
+                                                <constraint firstItem="lMc-jm-uc6" firstAttribute="trailing" secondItem="k6l-Rd-RP8" secondAttribute="trailingMargin" id="4FM-kX-BRe"/>
+                                                <constraint firstItem="lMc-jm-uc6" firstAttribute="bottom" secondItem="k6l-Rd-RP8" secondAttribute="bottomMargin" id="DLp-Mf-S3c"/>
+                                                <constraint firstItem="lMc-jm-uc6" firstAttribute="top" secondItem="k6l-Rd-RP8" secondAttribute="topMargin" id="LbL-iz-lx0"/>
+                                                <constraint firstItem="lMc-jm-uc6" firstAttribute="leading" secondItem="k6l-Rd-RP8" secondAttribute="leadingMargin" id="sb7-gw-9iq"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="cQl-en-8uL" kind="show" id="TMY-w6-daH"/>
-                                        </connections>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="The Reawakened Series 3" id="62H-RL-SFd">
+                            <tableViewSection id="fmI-0p-g4C">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell３" rowHeight="206" id="7RG-MI-v0g">
-                                        <rect key="frame" x="0.0" y="496" width="414" height="206"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell1" rowHeight="206" id="XVd-qz-RQV">
+                                        <rect key="frame" x="0.0" y="412" width="414" height="206"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7RG-MI-v0g" id="giZ-D5-Di8">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="205.66666666666666"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XVd-qz-RQV" id="1ND-bT-RNA">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="206"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Book3" translatesAutoresizingMaskIntoConstraints="NO" id="85v-Jx-XPo">
-                                                    <rect key="frame" x="20" y="0.0" width="136" height="205.66666666666666"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bI4-6f-ytg">
-                                                    <rect key="frame" x="256" y="0.0" width="100" height="205.66666666666666"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xtx-Uu-RbH">
+                                                    <rect key="frame" x="20" y="11" width="374" height="184"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJf-4a-VhF">
-                                                            <rect key="frame" x="13" y="0.0" width="74" height="93.666666666666671"/>
-                                                            <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
-                                                            <state key="normal" title="Amazon"/>
-                                                        </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZl-9q-r36">
-                                                            <rect key="frame" x="26.666666666666686" y="56.000000000000007" width="47" height="93.666666666666686"/>
-                                                            <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
-                                                            <state key="normal" title="Kobo"/>
-                                                        </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfz-HX-Huu">
-                                                            <rect key="frame" x="6.6666666666666856" y="112.33333333333334" width="87" height="93.333333333333343"/>
-                                                            <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
-                                                            <state key="normal" title="ReadMoo"/>
-                                                        </button>
+                                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Book3" translatesAutoresizingMaskIntoConstraints="NO" id="0PK-xf-UDz">
+                                                            <rect key="frame" x="40" y="0.0" width="136" height="184"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="136" id="F3v-wv-rhV"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="70" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mzn-X1-flp">
+                                                            <rect key="frame" x="237" y="0.0" width="87" height="184"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKc-xM-mSi">
+                                                                    <rect key="frame" x="6.6666666666666856" y="0.0" width="74" height="34"/>
+                                                                    <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                                    <state key="normal" title="Amazon"/>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7j2-Jd-nXn">
+                                                                    <rect key="frame" x="20" y="75" width="47" height="34"/>
+                                                                    <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                                    <state key="normal" title="Kobo"/>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50h-Jk-6I9">
+                                                                    <rect key="frame" x="0.0" y="150" width="87" height="34"/>
+                                                                    <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                                    <state key="normal" title="ReadMoo"/>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
                                                     </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="100" id="OPQ-lL-Kyp"/>
+                                                        <constraint firstItem="0PK-xf-UDz" firstAttribute="top" secondItem="Xtx-Uu-RbH" secondAttribute="top" id="EpV-Cn-3SV"/>
+                                                        <constraint firstAttribute="bottom" secondItem="mzn-X1-flp" secondAttribute="bottom" id="cAB-xh-rk9"/>
+                                                        <constraint firstAttribute="bottom" secondItem="0PK-xf-UDz" secondAttribute="bottom" id="hEh-TU-oHk"/>
+                                                        <constraint firstItem="mzn-X1-flp" firstAttribute="top" secondItem="Xtx-Uu-RbH" secondAttribute="top" id="pRH-SG-8N8"/>
+                                                        <constraint firstItem="0PK-xf-UDz" firstAttribute="leading" secondItem="Xtx-Uu-RbH" secondAttribute="leading" constant="40" id="soL-lg-bAF"/>
+                                                        <constraint firstAttribute="trailing" secondItem="mzn-X1-flp" secondAttribute="trailing" constant="50" id="uUh-xd-6cQ"/>
                                                     </constraints>
-                                                </stackView>
+                                                </view>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="bI4-6f-ytg" secondAttribute="trailing" constant="20" id="0Lo-9I-blC"/>
-                                                <constraint firstItem="bI4-6f-ytg" firstAttribute="top" secondItem="giZ-D5-Di8" secondAttribute="top" id="YmX-2T-7ar"/>
-                                                <constraint firstAttribute="bottom" secondItem="bI4-6f-ytg" secondAttribute="bottom" id="m2d-SW-6GE"/>
+                                                <constraint firstItem="Xtx-Uu-RbH" firstAttribute="bottom" secondItem="1ND-bT-RNA" secondAttribute="bottomMargin" id="5ts-FS-rhg"/>
+                                                <constraint firstItem="Xtx-Uu-RbH" firstAttribute="trailing" secondItem="1ND-bT-RNA" secondAttribute="trailingMargin" id="P3V-Dk-tir"/>
+                                                <constraint firstItem="Xtx-Uu-RbH" firstAttribute="top" secondItem="1ND-bT-RNA" secondAttribute="topMargin" id="Wrp-Cz-SEg"/>
+                                                <constraint firstItem="Xtx-Uu-RbH" firstAttribute="leading" secondItem="1ND-bT-RNA" secondAttribute="leadingMargin" id="aAx-Gh-acO"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="yrM-Ef-7vo" kind="show" id="0yV-5e-8R9"/>
-                                        </connections>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="0C4-Ki-ndJ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell1" rowHeight="206" id="3cn-Wb-7B1">
+                                        <rect key="frame" x="0.0" y="618" width="414" height="206"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3cn-Wb-7B1" id="bHn-i3-cwq">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="206"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iez-MG-Eq1">
+                                                    <rect key="frame" x="20" y="11" width="374" height="184"/>
+                                                    <subviews>
+                                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Book4" translatesAutoresizingMaskIntoConstraints="NO" id="nkb-NI-isB">
+                                                            <rect key="frame" x="40" y="0.0" width="136" height="184"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="136" id="m4T-y9-rJb"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="70" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vHt-6S-tLW">
+                                                            <rect key="frame" x="237" y="0.0" width="87" height="184"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7i-rV-eD1">
+                                                                    <rect key="frame" x="6.6666666666666856" y="0.0" width="74" height="34"/>
+                                                                    <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                                    <state key="normal" title="Amazon"/>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Irn-2U-Jl4">
+                                                                    <rect key="frame" x="20" y="75" width="47" height="34"/>
+                                                                    <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                                    <state key="normal" title="Kobo"/>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWW-AE-Cfc">
+                                                                    <rect key="frame" x="0.0" y="150" width="87" height="34"/>
+                                                                    <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                                                    <state key="normal" title="ReadMoo"/>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="vHt-6S-tLW" secondAttribute="bottom" id="17c-DI-lJz"/>
+                                                        <constraint firstItem="nkb-NI-isB" firstAttribute="leading" secondItem="Iez-MG-Eq1" secondAttribute="leading" constant="40" id="Imc-ZS-SFN"/>
+                                                        <constraint firstItem="vHt-6S-tLW" firstAttribute="top" secondItem="Iez-MG-Eq1" secondAttribute="top" id="XSD-iX-lCg"/>
+                                                        <constraint firstAttribute="bottom" secondItem="nkb-NI-isB" secondAttribute="bottom" id="aX7-6Z-aPp"/>
+                                                        <constraint firstAttribute="trailing" secondItem="vHt-6S-tLW" secondAttribute="trailing" constant="50" id="bpr-tL-2ZF"/>
+                                                        <constraint firstItem="nkb-NI-isB" firstAttribute="top" secondItem="Iez-MG-Eq1" secondAttribute="top" id="eM0-Tb-poA"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Iez-MG-Eq1" firstAttribute="bottom" secondItem="bHn-i3-cwq" secondAttribute="bottomMargin" id="SWG-5x-64D"/>
+                                                <constraint firstItem="Iez-MG-Eq1" firstAttribute="top" secondItem="bHn-i3-cwq" secondAttribute="topMargin" id="fau-lH-RMq"/>
+                                                <constraint firstItem="Iez-MG-Eq1" firstAttribute="trailing" secondItem="bHn-i3-cwq" secondAttribute="trailingMargin" id="feT-7X-idp"/>
+                                                <constraint firstItem="Iez-MG-Eq1" firstAttribute="leading" secondItem="bHn-i3-cwq" secondAttribute="leadingMargin" id="rUP-Ww-x5u"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1810,7 +1926,7 @@ Cg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book3" translatesAutoresizingMaskIntoConstraints="NO" id="Xbh-sl-pqL">
-                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1836,7 +1952,7 @@ Cg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book2" translatesAutoresizingMaskIntoConstraints="NO" id="Ycc-Bq-bsh">
-                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1858,6 +1974,7 @@ Cg
         <image name="Book1" width="554" height="790"/>
         <image name="Book2" width="549" height="830"/>
         <image name="Book3" width="546" height="830"/>
+        <image name="Book4" width="332" height="500"/>
         <image name="Poem1" width="1590" height="725"/>
         <image name="Poem2" width="399" height="224"/>
         <image name="Poem3" width="399" height="221"/>

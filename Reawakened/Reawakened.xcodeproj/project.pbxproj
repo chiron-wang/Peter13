@@ -12,6 +12,7 @@
 		272D540B22F3BDA8002488C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272D540922F3BDA8002488C3 /* Main.storyboard */; };
 		272D541022F3BDAA002488C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272D540E22F3BDAA002488C3 /* LaunchScreen.storyboard */; };
 		273D94F322F4981100263FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 273D94F222F4980F00263FED /* Assets.xcassets */; };
+		273D94F522F6D58B00263FED /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D94F422F6D58A00263FED /* BuyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		272D540F22F3BDAA002488C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		272D541122F3BDAA002488C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		273D94F222F4980F00263FED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		273D94F422F6D58A00263FED /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				272D540522F3BDA8002488C3 /* AppDelegate.swift */,
 				272D540722F3BDA8002488C3 /* ViewController.swift */,
 				272D540922F3BDA8002488C3 /* Main.storyboard */,
+				273D94F422F6D58A00263FED /* BuyViewController.swift */,
 				272D540E22F3BDAA002488C3 /* LaunchScreen.storyboard */,
 				273D94F222F4980F00263FED /* Assets.xcassets */,
 				272D541122F3BDAA002488C3 /* Info.plist */,
@@ -137,6 +140,7 @@
 			files = (
 				272D540822F3BDA8002488C3 /* ViewController.swift in Sources */,
 				272D540622F3BDA8002488C3 /* AppDelegate.swift in Sources */,
+				273D94F522F6D58B00263FED /* BuyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
