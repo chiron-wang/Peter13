@@ -1384,7 +1384,7 @@ Cg
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Poem1" translatesAutoresizingMaskIntoConstraints="NO" id="pI4-Gs-rkc">
-                                <rect key="frame" x="0.0" y="147" width="414" height="725.00000000000011"/>
+                                <rect key="frame" x="0.0" y="147" width="414" height="16"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1409,7 +1409,7 @@ Cg
         <!--YoutubeTableViewController-->
         <scene sceneID="yBn-Zy-E0R">
             <objects>
-                <tableViewController title="YoutubeTableViewController" id="kLA-6V-c88" sceneMemberID="viewController">
+                <tableViewController title="YoutubeTableViewController" id="kLA-6V-c88" customClass="YoutubeTableViewController" customModule="Reawakened" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bjH-op-m2L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1449,6 +1449,9 @@ Cg
                                                 <constraint firstAttribute="bottom" secondItem="MpV-dL-4sY" secondAttribute="bottom" id="s55-Da-3jj"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Dx1-ql-D5B" kind="show" identifier="book1" id="hdz-SC-z14"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1486,6 +1489,9 @@ Cg
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xcO-cq-cYr" secondAttribute="trailing" constant="20" symbolic="YES" id="eXX-8Y-vRP"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Dx1-ql-D5B" kind="show" identifier="book2" id="ZQ9-1B-EdT"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1523,6 +1529,9 @@ Cg
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5bE-qy-b7g" secondAttribute="trailing" constant="20" symbolic="YES" id="vuJ-VN-elU"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Dx1-ql-D5B" kind="show" identifier="book3" id="ZcP-L7-5vY"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1541,13 +1550,13 @@ Cg
         <!--YoutubeViewController-->
         <scene sceneID="wta-0q-277">
             <objects>
-                <viewController title="YoutubeViewController" id="Dx1-ql-D5B" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="youtubeDetails" title="YoutubeViewController" id="Dx1-ql-D5B" customClass="YoutubeViewController" customModule="Reawakened" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fJ3-IY-gfN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s9X-V3-OJj">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQ5-6j-aNe">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -1557,13 +1566,16 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="s9X-V3-OJj" firstAttribute="leading" secondItem="00M-fS-ad3" secondAttribute="leading" id="SBU-Lo-Z6k"/>
-                            <constraint firstItem="00M-fS-ad3" firstAttribute="trailing" secondItem="s9X-V3-OJj" secondAttribute="trailing" id="Uk0-hX-edT"/>
-                            <constraint firstItem="s9X-V3-OJj" firstAttribute="top" secondItem="00M-fS-ad3" secondAttribute="top" id="Uy5-ht-2eK"/>
-                            <constraint firstItem="00M-fS-ad3" firstAttribute="bottom" secondItem="s9X-V3-OJj" secondAttribute="bottom" id="yM3-PG-VKA"/>
+                            <constraint firstItem="eQ5-6j-aNe" firstAttribute="leading" secondItem="00M-fS-ad3" secondAttribute="leading" id="794-p5-LUx"/>
+                            <constraint firstItem="eQ5-6j-aNe" firstAttribute="top" secondItem="00M-fS-ad3" secondAttribute="top" id="HWb-nO-vbb"/>
+                            <constraint firstItem="00M-fS-ad3" firstAttribute="trailing" secondItem="eQ5-6j-aNe" secondAttribute="trailing" id="M89-9I-NdN"/>
+                            <constraint firstItem="00M-fS-ad3" firstAttribute="bottom" secondItem="eQ5-6j-aNe" secondAttribute="bottom" id="PS7-UR-a0h"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="00M-fS-ad3"/>
                     </view>
+                    <connections>
+                        <outlet property="youtubeWebView" destination="eQ5-6j-aNe" id="hsg-Oj-TIK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DRE-DK-cWz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1591,45 +1603,103 @@ Cg
         <!--Buy1ViewController-->
         <scene sceneID="d45-7Q-Ond">
             <objects>
-                <viewController title="Buy1ViewController" id="mT9-5C-PId" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="buyDetails1" title="Buy1ViewController" id="mT9-5C-PId" customClass="BuyDetailsViewController" customModule="Reawakened" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KYW-BT-WoH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3OA-rb-eQS">
-                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book1" translatesAutoresizingMaskIntoConstraints="NO" id="MXw-GF-X6x">
-                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book1" translatesAutoresizingMaskIntoConstraints="NO" id="MXw-GF-X6x">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                             </imageView>
+                            <activityIndicatorView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="iGx-fN-1FI">
+                                <rect key="frame" x="188.66666666666666" y="349.66666666666669" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3OA-rb-eQS" firstAttribute="leading" secondItem="jky-In-M48" secondAttribute="leading" id="ARN-m8-ykO"/>
                             <constraint firstItem="MXw-GF-X6x" firstAttribute="leading" secondItem="jky-In-M48" secondAttribute="leading" id="G6b-nE-yec"/>
                             <constraint firstItem="jky-In-M48" firstAttribute="trailing" secondItem="3OA-rb-eQS" secondAttribute="trailing" id="Jlx-W2-ipX"/>
+                            <constraint firstItem="iGx-fN-1FI" firstAttribute="centerX" secondItem="KYW-BT-WoH" secondAttribute="centerX" id="O6g-Y9-GXt"/>
                             <constraint firstItem="MXw-GF-X6x" firstAttribute="trailing" secondItem="jky-In-M48" secondAttribute="trailing" id="cOU-uB-0y1"/>
                             <constraint firstItem="MXw-GF-X6x" firstAttribute="top" secondItem="jky-In-M48" secondAttribute="top" id="cmm-Bv-tTJ"/>
                             <constraint firstItem="3OA-rb-eQS" firstAttribute="top" secondItem="jky-In-M48" secondAttribute="top" id="fZA-SM-RWG"/>
                             <constraint firstItem="MXw-GF-X6x" firstAttribute="bottom" secondItem="jky-In-M48" secondAttribute="bottom" id="iBr-dx-HRp"/>
                             <constraint firstItem="jky-In-M48" firstAttribute="bottom" secondItem="3OA-rb-eQS" secondAttribute="bottom" id="k8V-3I-vBy"/>
+                            <constraint firstItem="iGx-fN-1FI" firstAttribute="centerY" secondItem="KYW-BT-WoH" secondAttribute="centerY" id="oeJ-K2-CIY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jky-In-M48"/>
                     </view>
+                    <connections>
+                        <outlet property="bookUIImage" destination="MXw-GF-X6x" id="Q2n-Nu-mm8"/>
+                        <outlet property="loadingActivityIndecatorView" destination="iGx-fN-1FI" id="xqM-ma-220"/>
+                        <outlet property="storeWKWebView" destination="3OA-rb-eQS" id="y4x-K4-DzL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RiN-hF-i8q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1399" y="-1291"/>
+            <point key="canvasLocation" x="2606" y="-2049"/>
+        </scene>
+        <!--Buy4ViewController-->
+        <scene sceneID="4P4-WP-Fsn">
+            <objects>
+                <viewController storyboardIdentifier="buyDetails4" title="Buy4ViewController" id="tUI-M8-gcy" customClass="BuyDetailsViewController" customModule="Reawakened" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ea0-K3-poK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ofc-gx-UP5">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book4" translatesAutoresizingMaskIntoConstraints="NO" id="5ng-N6-TtU">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <activityIndicatorView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="BMG-qf-4gz">
+                                <rect key="frame" x="188.66666666666666" y="349.66666666666669" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ase-II-U2f" firstAttribute="trailing" secondItem="Ofc-gx-UP5" secondAttribute="trailing" id="9cZ-H9-KUf"/>
+                            <constraint firstItem="5ng-N6-TtU" firstAttribute="trailing" secondItem="ase-II-U2f" secondAttribute="trailing" id="Ga1-bY-DC3"/>
+                            <constraint firstItem="5ng-N6-TtU" firstAttribute="bottom" secondItem="ase-II-U2f" secondAttribute="bottom" id="IfL-ya-7sf"/>
+                            <constraint firstItem="BMG-qf-4gz" firstAttribute="centerY" secondItem="ea0-K3-poK" secondAttribute="centerY" id="MW7-Ww-aiw"/>
+                            <constraint firstItem="Ofc-gx-UP5" firstAttribute="leading" secondItem="ase-II-U2f" secondAttribute="leading" id="R3F-tX-IKs"/>
+                            <constraint firstItem="Ofc-gx-UP5" firstAttribute="top" secondItem="ase-II-U2f" secondAttribute="top" id="ToE-dA-Gb0"/>
+                            <constraint firstItem="BMG-qf-4gz" firstAttribute="centerX" secondItem="ea0-K3-poK" secondAttribute="centerX" id="Zch-dG-9Rj"/>
+                            <constraint firstItem="5ng-N6-TtU" firstAttribute="leading" secondItem="ase-II-U2f" secondAttribute="leading" id="eP9-yb-ASI"/>
+                            <constraint firstItem="ase-II-U2f" firstAttribute="bottom" secondItem="Ofc-gx-UP5" secondAttribute="bottom" id="tId-bf-EvT"/>
+                            <constraint firstItem="5ng-N6-TtU" firstAttribute="top" secondItem="ase-II-U2f" secondAttribute="top" id="x60-F2-ccp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ase-II-U2f"/>
+                    </view>
+                    <connections>
+                        <outlet property="bookUIImage" destination="5ng-N6-TtU" id="4gg-Yp-8BR"/>
+                        <outlet property="loadingActivityIndecatorView" destination="BMG-qf-4gz" id="ffB-Gc-2Zk"/>
+                        <outlet property="storeWKWebView" destination="Ofc-gx-UP5" id="pNL-bC-2up"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EaD-cB-X0d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5220" y="-2049"/>
         </scene>
         <!--BuyTableViewController-->
         <scene sceneID="rqh-Ke-dfe">
             <objects>
-                <tableViewController title="BuyTableViewController" id="s4T-KX-pQL" sceneMemberID="viewController">
+                <tableViewController title="BuyTableViewController" id="s4T-KX-pQL" customClass="BuyTableViewController" customModule="Reawakened" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="5" id="7va-of-lKu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1656,20 +1726,29 @@ Cg
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="70" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QQ2-DF-lh4">
                                                             <rect key="frame" x="237" y="0.0" width="87" height="184"/>
                                                             <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5R-CP-PYA">
+                                                                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" restorationIdentifier="book1Amazon" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5R-CP-PYA" userLabel="Amazon1">
                                                                     <rect key="frame" x="6.6666666666666856" y="0.0" width="74" height="34"/>
                                                                     <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
                                                                     <state key="normal" title="Amazon"/>
+                                                                    <connections>
+                                                                        <action selector="buyButtonPressed:" destination="s4T-KX-pQL" eventType="touchUpInside" id="VGy-C7-Ayc"/>
+                                                                    </connections>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFx-OF-eVH">
+                                                                <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="book1Kobo" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFx-OF-eVH" userLabel="Kobo1">
                                                                     <rect key="frame" x="20" y="75" width="47" height="34"/>
                                                                     <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
                                                                     <state key="normal" title="Kobo"/>
+                                                                    <connections>
+                                                                        <action selector="buyButtonPressed:" destination="s4T-KX-pQL" eventType="touchUpInside" id="ADO-KP-MIl"/>
+                                                                    </connections>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIc-zB-gsl">
+                                                                <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="book1ReadMoo" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIc-zB-gsl" userLabel="ReadMoo1">
                                                                     <rect key="frame" x="0.0" y="150" width="87" height="34"/>
                                                                     <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
                                                                     <state key="normal" title="ReadMoo"/>
+                                                                    <connections>
+                                                                        <action selector="buyButtonPressed:" destination="s4T-KX-pQL" eventType="touchUpInside" id="ALg-BL-tmU"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                         </stackView>
@@ -1694,9 +1773,6 @@ Cg
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <connections>
-                                            <segue destination="mT9-5C-PId" kind="show" id="6Tk-bB-o6x"/>
-                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1721,20 +1797,29 @@ Cg
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="70" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ybL-5S-OOR">
                                                             <rect key="frame" x="237" y="0.0" width="87" height="184"/>
                                                             <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPS-BP-ooJ">
+                                                                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" restorationIdentifier="book2Amazon" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPS-BP-ooJ" userLabel="Amazon2">
                                                                     <rect key="frame" x="6.6666666666666856" y="0.0" width="74" height="34"/>
                                                                     <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
                                                                     <state key="normal" title="Amazon"/>
+                                                                    <connections>
+                                                                        <action selector="buyButtonPressed:" destination="s4T-KX-pQL" eventType="touchUpInside" id="dSQ-B2-I4e"/>
+                                                                    </connections>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PD6-Pe-qZe">
+                                                                <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="book2Kobo" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PD6-Pe-qZe" userLabel="Kobo2">
                                                                     <rect key="frame" x="20" y="75" width="47" height="34"/>
                                                                     <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
                                                                     <state key="normal" title="Kobo"/>
+                                                                    <connections>
+                                                                        <action selector="buyButtonPressed:" destination="s4T-KX-pQL" eventType="touchUpInside" id="mxJ-e1-j9E"/>
+                                                                    </connections>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLL-00-P1R">
+                                                                <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="book2ReadMoo" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLL-00-P1R" userLabel="ReadMoo2">
                                                                     <rect key="frame" x="0.0" y="150" width="87" height="34"/>
                                                                     <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
                                                                     <state key="normal" title="ReadMoo"/>
+                                                                    <connections>
+                                                                        <action selector="buyButtonPressed:" destination="s4T-KX-pQL" eventType="touchUpInside" id="tet-cq-Abc"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                         </stackView>
@@ -1783,20 +1868,29 @@ Cg
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="70" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mzn-X1-flp">
                                                             <rect key="frame" x="237" y="0.0" width="87" height="184"/>
                                                             <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKc-xM-mSi">
+                                                                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" restorationIdentifier="book3Amazon" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKc-xM-mSi" userLabel="Amazon3">
                                                                     <rect key="frame" x="6.6666666666666856" y="0.0" width="74" height="34"/>
                                                                     <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
                                                                     <state key="normal" title="Amazon"/>
+                                                                    <connections>
+                                                                        <action selector="buyButtonPressed:" destination="s4T-KX-pQL" eventType="touchUpInside" id="TZ3-qS-3Fu"/>
+                                                                    </connections>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7j2-Jd-nXn">
+                                                                <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="book3Kobo" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7j2-Jd-nXn" userLabel="Kobo3">
                                                                     <rect key="frame" x="20" y="75" width="47" height="34"/>
                                                                     <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
                                                                     <state key="normal" title="Kobo"/>
+                                                                    <connections>
+                                                                        <action selector="buyButtonPressed:" destination="s4T-KX-pQL" eventType="touchUpInside" id="lC1-Aq-baO"/>
+                                                                    </connections>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50h-Jk-6I9">
+                                                                <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="book3ReadMoo" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50h-Jk-6I9" userLabel="ReadMoo3">
                                                                     <rect key="frame" x="0.0" y="150" width="87" height="34"/>
                                                                     <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
                                                                     <state key="normal" title="ReadMoo"/>
+                                                                    <connections>
+                                                                        <action selector="buyButtonPressed:" destination="s4T-KX-pQL" eventType="touchUpInside" id="xoV-6M-jdA"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                         </stackView>
@@ -1845,20 +1939,29 @@ Cg
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="70" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vHt-6S-tLW">
                                                             <rect key="frame" x="237" y="0.0" width="87" height="184"/>
                                                             <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7i-rV-eD1">
+                                                                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" restorationIdentifier="book4Amazon" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7i-rV-eD1" userLabel="Amazon4">
                                                                     <rect key="frame" x="6.6666666666666856" y="0.0" width="74" height="34"/>
                                                                     <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
                                                                     <state key="normal" title="Amazon"/>
+                                                                    <connections>
+                                                                        <action selector="buyButtonPressed:" destination="s4T-KX-pQL" eventType="touchUpInside" id="f3e-Nj-g4T"/>
+                                                                    </connections>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Irn-2U-Jl4">
+                                                                <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="book4Kobo" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Irn-2U-Jl4" userLabel="Kobo4">
                                                                     <rect key="frame" x="20" y="75" width="47" height="34"/>
                                                                     <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
                                                                     <state key="normal" title="Kobo"/>
+                                                                    <connections>
+                                                                        <action selector="buyButtonPressed:" destination="s4T-KX-pQL" eventType="touchUpInside" id="c7P-O6-I7n"/>
+                                                                    </connections>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWW-AE-Cfc">
+                                                                <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="book4ReadMoo" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWW-AE-Cfc" userLabel="ReadMoo4">
                                                                     <rect key="frame" x="0.0" y="150" width="87" height="34"/>
                                                                     <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
                                                                     <state key="normal" title="ReadMoo"/>
+                                                                    <connections>
+                                                                        <action selector="buyButtonPressed:" destination="s4T-KX-pQL" eventType="touchUpInside" id="Ed1-1I-ykg"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                         </stackView>
@@ -1920,54 +2023,98 @@ Cg
         <!--Buy3ViewController-->
         <scene sceneID="vbq-dt-MlH">
             <objects>
-                <viewController title="Buy3ViewController" id="yrM-Ef-7vo" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="buyDetails3" title="Buy3ViewController" id="yrM-Ef-7vo" customClass="BuyDetailsViewController" customModule="Reawakened" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ox8-SX-tff">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book3" translatesAutoresizingMaskIntoConstraints="NO" id="Xbh-sl-pqL">
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EpW-Qa-nPQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book3" translatesAutoresizingMaskIntoConstraints="NO" id="Xbh-sl-pqL">
                                 <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                             </imageView>
+                            <activityIndicatorView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="emo-7v-cfO">
+                                <rect key="frame" x="188.66666666666666" y="349.66666666666669" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="emo-7v-cfO" firstAttribute="centerY" secondItem="Ox8-SX-tff" secondAttribute="centerY" id="ANe-DG-5w0"/>
                             <constraint firstItem="Xbh-sl-pqL" firstAttribute="leading" secondItem="4yo-OX-X57" secondAttribute="leading" id="ENj-L8-wrK"/>
+                            <constraint firstItem="4yo-OX-X57" firstAttribute="bottom" secondItem="EpW-Qa-nPQ" secondAttribute="bottom" id="I6O-Zo-3MW"/>
+                            <constraint firstItem="emo-7v-cfO" firstAttribute="centerX" secondItem="Ox8-SX-tff" secondAttribute="centerX" id="MeM-2t-df3"/>
                             <constraint firstItem="Xbh-sl-pqL" firstAttribute="top" secondItem="4yo-OX-X57" secondAttribute="top" id="OeY-oO-31D"/>
                             <constraint firstItem="Xbh-sl-pqL" firstAttribute="trailing" secondItem="4yo-OX-X57" secondAttribute="trailing" id="Say-oy-QJv"/>
+                            <constraint firstItem="EpW-Qa-nPQ" firstAttribute="leading" secondItem="4yo-OX-X57" secondAttribute="leading" id="cJl-wf-Fcw"/>
+                            <constraint firstItem="EpW-Qa-nPQ" firstAttribute="trailing" secondItem="4yo-OX-X57" secondAttribute="trailing" id="sS0-Zs-Sav"/>
                             <constraint firstItem="Xbh-sl-pqL" firstAttribute="bottom" secondItem="4yo-OX-X57" secondAttribute="bottom" id="vub-hs-ZsT"/>
+                            <constraint firstItem="EpW-Qa-nPQ" firstAttribute="top" secondItem="Ox8-SX-tff" secondAttribute="top" id="wlG-UA-ooE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4yo-OX-X57"/>
                     </view>
+                    <connections>
+                        <outlet property="bookUIImage" destination="Xbh-sl-pqL" id="7zo-pw-QAn"/>
+                        <outlet property="loadingActivityIndecatorView" destination="emo-7v-cfO" id="8vR-Mj-geS"/>
+                        <outlet property="storeWKWebView" destination="EpW-Qa-nPQ" id="5Jw-Fz-j2O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r4q-TI-foJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1399" y="218"/>
+            <point key="canvasLocation" x="4423" y="-2049"/>
         </scene>
         <!--Buy2ViewController-->
         <scene sceneID="mnY-kR-Y8G">
             <objects>
-                <viewController title="Buy2ViewController" id="cQl-en-8uL" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="buyDetails2" title="Buy2ViewController" id="cQl-en-8uL" customClass="BuyDetailsViewController" customModule="Reawakened" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yts-Cw-9wj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book2" translatesAutoresizingMaskIntoConstraints="NO" id="Ycc-Bq-bsh">
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJl-sq-oj5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book2" translatesAutoresizingMaskIntoConstraints="NO" id="Ycc-Bq-bsh">
                                 <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                             </imageView>
+                            <activityIndicatorView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="PgA-MR-UqG">
+                                <rect key="frame" x="188.66666666666666" y="349.66666666666669" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="PgA-MR-UqG" firstAttribute="centerY" secondItem="yts-Cw-9wj" secondAttribute="centerY" id="0Kb-e7-WYx"/>
                             <constraint firstItem="Ycc-Bq-bsh" firstAttribute="trailing" secondItem="6mf-FY-XWl" secondAttribute="trailing" id="Fcr-63-tdF"/>
                             <constraint firstItem="Ycc-Bq-bsh" firstAttribute="leading" secondItem="6mf-FY-XWl" secondAttribute="leading" id="LFN-E4-jp8"/>
+                            <constraint firstItem="fJl-sq-oj5" firstAttribute="trailing" secondItem="6mf-FY-XWl" secondAttribute="trailing" id="UPz-6d-EoA"/>
+                            <constraint firstItem="PgA-MR-UqG" firstAttribute="centerX" secondItem="yts-Cw-9wj" secondAttribute="centerX" id="gLK-Nh-ssO"/>
+                            <constraint firstItem="fJl-sq-oj5" firstAttribute="top" secondItem="yts-Cw-9wj" secondAttribute="top" id="l8m-iy-NcH"/>
+                            <constraint firstItem="fJl-sq-oj5" firstAttribute="leading" secondItem="6mf-FY-XWl" secondAttribute="leading" id="lY7-lZ-GdQ"/>
+                            <constraint firstItem="6mf-FY-XWl" firstAttribute="bottom" secondItem="fJl-sq-oj5" secondAttribute="bottom" id="o9b-57-US3"/>
                             <constraint firstItem="Ycc-Bq-bsh" firstAttribute="bottom" secondItem="6mf-FY-XWl" secondAttribute="bottom" id="ulT-vg-G1t"/>
                             <constraint firstItem="Ycc-Bq-bsh" firstAttribute="top" secondItem="6mf-FY-XWl" secondAttribute="top" id="zyu-DI-nFE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6mf-FY-XWl"/>
                     </view>
+                    <connections>
+                        <outlet property="bookUIImage" destination="Ycc-Bq-bsh" id="Kwq-Lb-G9V"/>
+                        <outlet property="loadingActivityIndecatorView" destination="PgA-MR-UqG" id="Vma-p1-r2Y"/>
+                        <outlet property="storeWKWebView" destination="fJl-sq-oj5" id="p41-8L-XSZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kEj-1u-JBf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1399" y="-540"/>
+            <point key="canvasLocation" x="3513" y="-2049"/>
         </scene>
     </scenes>
     <resources>
@@ -1982,4 +2129,7 @@ Cg
         <image name="tab3" width="29" height="29"/>
         <image name="tab4" width="29" height="29"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="hdz-SC-z14"/>
+    </inferredMetricsTieBreakers>
 </document>

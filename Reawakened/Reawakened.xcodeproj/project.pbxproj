@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27072C9C22F835FB00406F39 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27072C9B22F835FA00406F39 /* WebKit.framework */; };
 		272D540622F3BDA8002488C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272D540522F3BDA8002488C3 /* AppDelegate.swift */; };
 		272D540822F3BDA8002488C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272D540722F3BDA8002488C3 /* ViewController.swift */; };
 		272D540B22F3BDA8002488C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272D540922F3BDA8002488C3 /* Main.storyboard */; };
 		272D541022F3BDAA002488C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272D540E22F3BDAA002488C3 /* LaunchScreen.storyboard */; };
+		273B88D722F9D067006DC02C /* YoutubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273B88D622F9D067006DC02C /* YoutubeViewController.swift */; };
+		273B88D922F9D956006DC02C /* YoutubeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273B88D822F9D956006DC02C /* YoutubeTableViewController.swift */; };
 		273D94F322F4981100263FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 273D94F222F4980F00263FED /* Assets.xcassets */; };
-		273D94F522F6D58B00263FED /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D94F422F6D58A00263FED /* BuyViewController.swift */; };
+		273D94F522F6D58B00263FED /* BuyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D94F422F6D58A00263FED /* BuyDetailsViewController.swift */; };
+		273D94F722F813D400263FED /* BuyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D94F622F813D300263FED /* BuyTableViewController.swift */; };
+		DE2A704F6E530E413A80D724 /* Pods_Reawakened.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9E513228E9BA871D55F2F1 /* Pods_Reawakened.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27072C9B22F835FA00406F39 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		272D540222F3BDA8002488C3 /* Reawakened.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reawakened.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		272D540522F3BDA8002488C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		272D540722F3BDA8002488C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		272D540A22F3BDA8002488C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		272D540F22F3BDAA002488C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		272D541122F3BDAA002488C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		273B88D622F9D067006DC02C /* YoutubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeViewController.swift; sourceTree = "<group>"; };
+		273B88D822F9D956006DC02C /* YoutubeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeTableViewController.swift; sourceTree = "<group>"; };
 		273D94F222F4980F00263FED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		273D94F422F6D58A00263FED /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+		273D94F422F6D58A00263FED /* BuyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyDetailsViewController.swift; sourceTree = "<group>"; };
+		273D94F622F813D300263FED /* BuyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyTableViewController.swift; sourceTree = "<group>"; };
+		DE6D6897EE150BA233C652A2 /* Pods-Reawakened.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reawakened.release.xcconfig"; path = "Target Support Files/Pods-Reawakened/Pods-Reawakened.release.xcconfig"; sourceTree = "<group>"; };
+		EC9E513228E9BA871D55F2F1 /* Pods_Reawakened.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reawakened.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E0265E52D87CB917FC6BA3 /* Pods-Reawakened.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reawakened.debug.xcconfig"; path = "Target Support Files/Pods-Reawakened/Pods-Reawakened.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27072C9C22F835FB00406F39 /* WebKit.framework in Frameworks */,
+				DE2A704F6E530E413A80D724 /* Pods_Reawakened.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +56,8 @@
 			children = (
 				272D540422F3BDA8002488C3 /* Reawakened */,
 				272D540322F3BDA8002488C3 /* Products */,
+				4BD559E30249EC3A5204AF26 /* Pods */,
+				A96D7A990923688C8984A473 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +75,33 @@
 				272D540522F3BDA8002488C3 /* AppDelegate.swift */,
 				272D540722F3BDA8002488C3 /* ViewController.swift */,
 				272D540922F3BDA8002488C3 /* Main.storyboard */,
-				273D94F422F6D58A00263FED /* BuyViewController.swift */,
+				273B88D822F9D956006DC02C /* YoutubeTableViewController.swift */,
+				273B88D622F9D067006DC02C /* YoutubeViewController.swift */,
+				273D94F622F813D300263FED /* BuyTableViewController.swift */,
+				273D94F422F6D58A00263FED /* BuyDetailsViewController.swift */,
 				272D540E22F3BDAA002488C3 /* LaunchScreen.storyboard */,
 				273D94F222F4980F00263FED /* Assets.xcassets */,
 				272D541122F3BDAA002488C3 /* Info.plist */,
 			);
 			path = Reawakened;
+			sourceTree = "<group>";
+		};
+		4BD559E30249EC3A5204AF26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6E0265E52D87CB917FC6BA3 /* Pods-Reawakened.debug.xcconfig */,
+				DE6D6897EE150BA233C652A2 /* Pods-Reawakened.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A96D7A990923688C8984A473 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27072C9B22F835FA00406F39 /* WebKit.framework */,
+				EC9E513228E9BA871D55F2F1 /* Pods_Reawakened.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +111,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 272D541422F3BDAA002488C3 /* Build configuration list for PBXNativeTarget "Reawakened" */;
 			buildPhases = (
+				A2074A237D10EEF8CF1548F5 /* [CP] Check Pods Manifest.lock */,
 				272D53FE22F3BDA8002488C3 /* Sources */,
 				272D53FF22F3BDA8002488C3 /* Frameworks */,
 				272D540022F3BDA8002488C3 /* Resources */,
+				7F4539393C716C2757C2DD07 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +172,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7F4539393C716C2757C2DD07 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Reawakened/Pods-Reawakened-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Reawakened/Pods-Reawakened-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2074A237D10EEF8CF1548F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Reawakened-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		272D53FE22F3BDA8002488C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,7 +226,10 @@
 			files = (
 				272D540822F3BDA8002488C3 /* ViewController.swift in Sources */,
 				272D540622F3BDA8002488C3 /* AppDelegate.swift in Sources */,
-				273D94F522F6D58B00263FED /* BuyViewController.swift in Sources */,
+				273B88D922F9D956006DC02C /* YoutubeTableViewController.swift in Sources */,
+				273B88D722F9D067006DC02C /* YoutubeViewController.swift in Sources */,
+				273D94F722F813D400263FED /* BuyTableViewController.swift in Sources */,
+				273D94F522F6D58B00263FED /* BuyDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +373,7 @@
 		};
 		272D541522F3BDAA002488C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6E0265E52D87CB917FC6BA3 /* Pods-Reawakened.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +393,7 @@
 		};
 		272D541622F3BDAA002488C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE6D6897EE150BA233C652A2 /* Pods-Reawakened.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
