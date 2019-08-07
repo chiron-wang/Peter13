@@ -12,9 +12,10 @@ import Alamofire
 
 
 class YoutubeViewController: UIViewController {
-
+    
     @IBOutlet weak var youtubeWebView: WKWebView!
     
+    var activityIndicator:UIActivityIndicatorView!
     // book1Amazon, book1Kobo, book1ReadMoo
     var contentID = ""
     
@@ -40,13 +41,23 @@ class YoutubeViewController: UIViewController {
     // MARK: - Other Method
     
     private func configurationUI() {
+        setActivityIndicator()
         loadYoutube()
     }
     
+    func setActivityIndicator() {
+        activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
+        activityIndicator.color = UIColor.gray
+        activityIndicator.center = self.view.center
+        view.addSubview(activityIndicator)
+        
+        activityIndicator.startAnimating()
+    }
+    
     func loadYoutube() {
-        // getVideoURL() => https://www.youtube.com/watch?v=JPE_4973INg
         Alamofire.request(getVideoURL()).responseData {
             (response) in
+            self.activityIndicator.stopAnimating()
             self.youtubeWebView.load(response.data!, mimeType: "text/html", characterEncodingName: "utf-8", baseURL: URL(string: self.getVideoURL())!)
         }
     }

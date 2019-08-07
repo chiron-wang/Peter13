@@ -18,16 +18,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book1" translatesAutoresizingMaskIntoConstraints="NO" id="xtQ-no-wUW">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" contentInsetAdjustmentBehavior="always" translatesAutoresizingMaskIntoConstraints="NO" id="p1I-fc-9ux">
                                 <rect key="frame" x="0.0" y="64" width="414" height="623"/>
-                            </imageView>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fuG-pF-BIC">
+                                        <rect key="frame" x="0.0" y="0.0" width="1660" height="615"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Book1" translatesAutoresizingMaskIntoConstraints="NO" id="hnv-a6-Aiu">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="637"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Book2" translatesAutoresizingMaskIntoConstraints="NO" id="IRU-6V-arP">
+                                                <rect key="frame" x="414" y="0.0" width="414" height="637"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Book3" translatesAutoresizingMaskIntoConstraints="NO" id="vAL-Pu-p6F">
+                                                <rect key="frame" x="818" y="0.0" width="414" height="637"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="615" id="UrP-Sj-cNG"/>
+                                            <constraint firstAttribute="width" constant="1660" id="XRN-Mu-L9R"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fuG-pF-BIC" firstAttribute="leading" secondItem="p1I-fc-9ux" secondAttribute="leading" id="0qQ-ui-spo"/>
+                                    <constraint firstItem="fuG-pF-BIC" firstAttribute="top" secondItem="p1I-fc-9ux" secondAttribute="top" id="Bb3-jh-ysA"/>
+                                    <constraint firstAttribute="trailing" secondItem="fuG-pF-BIC" secondAttribute="trailing" constant="-1246" id="CSM-Pz-haW"/>
+                                    <constraint firstItem="fuG-pF-BIC" firstAttribute="bottom" secondItem="p1I-fc-9ux" secondAttribute="bottomMargin" id="ZJq-qU-xii"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="1660" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="xtQ-no-wUW" firstAttribute="top" secondItem="HbE-3H-cvh" secondAttribute="top" id="Bo4-OG-6oZ"/>
-                            <constraint firstItem="HbE-3H-cvh" firstAttribute="bottom" secondItem="xtQ-no-wUW" secondAttribute="bottom" id="Uo4-Le-gYN"/>
-                            <constraint firstItem="xtQ-no-wUW" firstAttribute="leading" secondItem="dan-aE-4FT" secondAttribute="leading" id="bbt-z5-rb6"/>
-                            <constraint firstAttribute="trailing" secondItem="xtQ-no-wUW" secondAttribute="trailing" id="bnI-cO-SQ3"/>
+                            <constraint firstAttribute="trailing" secondItem="p1I-fc-9ux" secondAttribute="trailing" id="6JS-cY-xtU"/>
+                            <constraint firstItem="p1I-fc-9ux" firstAttribute="bottom" secondItem="HbE-3H-cvh" secondAttribute="bottom" id="ahC-Ub-9F7"/>
+                            <constraint firstItem="p1I-fc-9ux" firstAttribute="leading" secondItem="dan-aE-4FT" secondAttribute="leading" id="qyS-4h-a2N"/>
+                            <constraint firstItem="p1I-fc-9ux" firstAttribute="top" secondItem="HbE-3H-cvh" secondAttribute="top" id="uIn-OU-lh6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HbE-3H-cvh"/>
                     </view>
@@ -35,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yhy-Pe-tcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4422" y="-1291"/>
+            <point key="canvasLocation" x="4421.739130434783" y="-1291.304347826087"/>
         </scene>
         <!--ReWakened-->
         <scene sceneID="ert-v9-88f">
@@ -1384,7 +1419,7 @@ Cg
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Poem1" translatesAutoresizingMaskIntoConstraints="NO" id="pI4-Gs-rkc">
-                                <rect key="frame" x="0.0" y="147" width="414" height="16"/>
+                                <rect key="frame" x="0.0" y="147" width="414" height="725.00000000000011"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
