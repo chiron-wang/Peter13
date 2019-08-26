@@ -296,143 +296,36 @@ fatty acids.</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MjT-tm-OYI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="209" y="-842"/>
-        </scene>
-        <!--Photo Wall 3-->
-        <scene sceneID="Dlx-YF-L3H">
-            <objects>
-                <viewController id="5xr-sZ-dqy" customClass="ChefsViewController" customModule="ChefsFake" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="S6F-nS-UmQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8sY-Wx-ZbE">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="r1J-9J-nRz">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChefsCollectionViewCell" id="Ou8-bD-B0c" customClass="ChefsCollectionViewCell" customModule="ChefsFake" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beef" translatesAutoresizingMaskIntoConstraints="NO" id="HRu-h6-ZWk">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                </imageView>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="HRu-h6-ZWk" secondAttribute="trailing" id="L0e-Or-nRC"/>
-                                            <constraint firstAttribute="bottom" secondItem="HRu-h6-ZWk" secondAttribute="bottom" id="Obm-Wv-JkH"/>
-                                            <constraint firstItem="HRu-h6-ZWk" firstAttribute="top" secondItem="Ou8-bD-B0c" secondAttribute="top" id="XVx-7u-Sle"/>
-                                            <constraint firstItem="HRu-h6-ZWk" firstAttribute="leading" secondItem="Ou8-bD-B0c" secondAttribute="leading" id="dpF-gY-UXs"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="chefsImageView" destination="HRu-h6-ZWk" id="T7W-8j-9Vz"/>
-                                            <segue destination="Kq7-iS-J1o" kind="show" id="OUK-It-X7R"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="5xr-sZ-dqy" id="LJf-Sh-afy"/>
-                                    <outlet property="delegate" destination="5xr-sZ-dqy" id="R2D-1j-21r"/>
-                                </connections>
-                            </collectionView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="8sY-Wx-ZbE" firstAttribute="bottom" secondItem="S6F-nS-UmQ" secondAttribute="bottom" id="6c8-95-yLl"/>
-                            <constraint firstItem="8sY-Wx-ZbE" firstAttribute="leading" secondItem="S6F-nS-UmQ" secondAttribute="leading" id="EL9-Z4-qBD"/>
-                            <constraint firstItem="8sY-Wx-ZbE" firstAttribute="trailing" secondItem="S6F-nS-UmQ" secondAttribute="trailing" id="sNL-RZ-V3c"/>
-                            <constraint firstItem="8sY-Wx-ZbE" firstAttribute="top" secondItem="S6F-nS-UmQ" secondAttribute="top" id="x79-kW-wuG"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="lKJ-eo-kvo"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Photo Wall 3" id="WGJ-4J-rtE"/>
-                    <connections>
-                        <outlet property="collectionView" destination="8sY-Wx-ZbE" id="Rb5-8j-S5C"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9rh-rZ-mJ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1054" y="-65"/>
-        </scene>
-        <!--Beef-->
-        <scene sceneID="keG-J7-pBe">
-            <objects>
-                <viewController id="Kq7-iS-J1o" customClass="ChefsDetailsViewController" customModule="ChefsFake" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3KX-Ty-pYI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aD4-LV-WBO">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="um2-oY-OzH" firstAttribute="trailing" secondItem="aD4-LV-WBO" secondAttribute="trailing" id="GO7-uD-WJD"/>
-                            <constraint firstItem="aD4-LV-WBO" firstAttribute="leading" secondItem="um2-oY-OzH" secondAttribute="leading" id="api-Dw-jjl"/>
-                            <constraint firstItem="aD4-LV-WBO" firstAttribute="top" secondItem="um2-oY-OzH" secondAttribute="top" id="i64-ct-cOJ"/>
-                            <constraint firstItem="um2-oY-OzH" firstAttribute="bottom" secondItem="aD4-LV-WBO" secondAttribute="bottom" id="mb4-YT-Oln"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="um2-oY-OzH"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Beef" id="uHt-Sh-Wnp"/>
-                    <connections>
-                        <outlet property="bigImageView" destination="aD4-LV-WBO" id="Czt-QX-BiL"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ttZ-wB-fmB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1881" y="-65"/>
+            <point key="canvasLocation" x="1324" y="-861"/>
         </scene>
         <!--Photo Wall 2-->
         <scene sceneID="fxD-ZU-Tay">
             <objects>
-                <collectionViewController id="8zy-cU-vYf" customClass="ChefsCollectionViewController" customModule="ChefsFake" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="8zy-cU-vYf" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="gNB-9g-13u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="xiu-06-eUy">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xiu-06-eUy">
                             <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChefsCollectionViewCell" id="YSE-rA-fhC" customClass="ChefsCollectionViewCell" customModule="ChefsFake" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YSE-rA-fhC">
+                                <rect key="frame" x="0.0" y="50" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beef" translatesAutoresizingMaskIntoConstraints="NO" id="afa-Qz-WxS">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        </imageView>
-                                    </subviews>
                                 </view>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="afa-Qz-WxS" secondAttribute="bottom" id="CaE-bb-tIy"/>
-                                    <constraint firstItem="afa-Qz-WxS" firstAttribute="top" secondItem="YSE-rA-fhC" secondAttribute="top" id="JbT-LB-D3N"/>
-                                    <constraint firstAttribute="trailing" secondItem="afa-Qz-WxS" secondAttribute="trailing" id="esQ-1r-Eia"/>
-                                    <constraint firstItem="afa-Qz-WxS" firstAttribute="leading" secondItem="YSE-rA-fhC" secondAttribute="leading" id="xUc-E0-en1"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="chefsImageView" destination="afa-Qz-WxS" id="ddb-tE-cG3"/>
-                                    <segue destination="Kq7-iS-J1o" kind="show" identifier="wall2Segue" id="v4o-2L-sTx"/>
-                                </connections>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="k3n-J4-mdq">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="8zy-cU-vYf" id="Tiq-tm-ijS"/>
                             <outlet property="delegate" destination="8zy-cU-vYf" id="wCD-UW-SST"/>
@@ -442,7 +335,7 @@ fatty acids.</string>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="npP-tf-oc1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1880.8" y="-842.42878560719646"/>
+            <point key="canvasLocation" x="1324" y="646"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="B3F-NJ-8ye">
@@ -460,7 +353,7 @@ fatty acids.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zio-EM-n61" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-710" y="-65"/>
+            <point key="canvasLocation" x="528.98550724637687" y="-554.46428571428567"/>
         </scene>
         <!--Photo Wall 1-->
         <scene sceneID="FYA-Nh-kFL">
@@ -554,8 +447,8 @@ and recipe come to you by itself.</string>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle906" translatesAutoresizingMaskIntoConstraints="NO" id="oSA-CZ-yGG">
-                                    <rect key="frame" x="70" y="226" width="145" height="5"/>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rectangle906" translatesAutoresizingMaskIntoConstraints="NO" id="oSA-CZ-yGG">
+                                    <rect key="frame" x="70" y="226" width="150" height="5"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="145" id="woo-fy-4gv"/>
                                     </constraints>
@@ -876,7 +769,7 @@ and recipe come to you by itself.</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uzo-EL-bKS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054" y="-842"/>
+            <point key="canvasLocation" x="1324" y="-65"/>
         </scene>
         <!--Menu-->
         <scene sceneID="8wd-2p-d0Z">
@@ -916,7 +809,7 @@ and recipe come to you by itself.</string>
                                             <color key="titleColor" red="1" green="0.2269072533" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="8zy-cU-vYf" kind="show" identifier="" id="JdF-aF-hJr"/>
+                                            <segue destination="8zy-cU-vYf" kind="show" id="JdF-aF-hJr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFN-jW-Nz3">
@@ -925,9 +818,6 @@ and recipe come to you by itself.</string>
                                         <state key="normal" title="Grid Photo Wall 3">
                                             <color key="titleColor" red="1" green="0.2269072533" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="5xr-sZ-dqy" kind="show" id="BQj-Pm-e1J"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -943,7 +833,7 @@ and recipe come to you by itself.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZX3-t5-cjh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="209" y="-65"/>
+            <point key="canvasLocation" x="529" y="180"/>
         </scene>
     </scenes>
     <resources>
@@ -955,8 +845,7 @@ and recipe come to you by itself.</string>
         <image name="rectangle906" width="375" height="5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7OJ-7S-UGP"/>
-        <segue reference="v4o-2L-sTx"/>
+        <segue reference="mgw-pH-KQk"/>
         <segue reference="ikv-mf-3fF"/>
     </inferredMetricsTieBreakers>
 </document>
