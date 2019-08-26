@@ -36,6 +36,9 @@
                                                     <state key="normal" title="IMAGES">
                                                         <color key="titleColor" red="1" green="0.22690725326538086" blue="0.41383117437362671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <segue destination="MS2-7p-PbO" kind="show" id="7OJ-7S-UGP"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLd-gj-D3e">
                                                     <rect key="frame" x="171" y="9" width="91" height="42"/>
@@ -292,7 +295,7 @@ fatty acids.</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MjT-tm-OYI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1439.2" y="-554.57271364317842"/>
+            <point key="canvasLocation" x="1324" y="-861"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="B3F-NJ-8ye">
@@ -305,12 +308,428 @@ fatty acids.</string>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="OYL-uX-P99" kind="relationship" relationship="rootViewController" id="ISs-iW-0JQ"/>
+                        <segue destination="MS2-7p-PbO" kind="relationship" relationship="rootViewController" id="PTX-Mo-QtQ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zio-EM-n61" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="528.98550724637687" y="-554.46428571428567"/>
+        </scene>
+        <!--Combine-->
+        <scene sceneID="FYA-Nh-kFL">
+            <objects>
+                <tableViewController id="MS2-7p-PbO" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="120" sectionHeaderHeight="1" sectionFooterHeight="1" id="nVU-Jm-LfX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Tqa-BB-fvM">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Gfq-CM-Uau">
+                                    <rect key="frame" x="70" y="166" width="262" height="65"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="aZ5-hf-cAb">
+                                            <rect key="frame" x="0.0" y="0.0" width="262" height="65"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUC-oP-biM">
+                                                    <rect key="frame" x="0.0" y="2.5" width="91" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="eMz-rV-uRb"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <state key="normal" title="IMAGES">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="OYL-uX-P99" kind="show" id="Jzt-WQ-Ldy"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAk-Ew-D8e">
+                                                    <rect key="frame" x="171" y="11.5" width="91" height="42"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <state key="normal" title="NAMES">
+                                                        <color key="titleColor" red="1" green="0.22690725326538086" blue="0.41383117437362671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="RF2-xu-sNh"/>
+                                        <constraint firstItem="aZ5-hf-cAb" firstAttribute="centerX" secondItem="Gfq-CM-Uau" secondAttribute="centerX" id="sKw-mw-o2f"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rt2-Vz-dzY">
+                                    <rect key="frame" x="37.5" y="0.0" width="300" height="151"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don`t know what to cook?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EwN-Br-k1t">
+                                            <rect key="frame" x="49.5" y="0.0" width="201.5" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="U4J-SX-Yfx"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SgD-Lq-Uj8">
+                                            <rect key="frame" x="30" y="40" width="240" height="100"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="240" id="jt9-tK-S0x"/>
+                                                <constraint firstAttribute="height" constant="100" id="sqr-eY-hnh"/>
+                                            </constraints>
+                                            <string key="text">Just select your favorite
+convenience food,
+and recipe come to you by itself.</string>
+                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle891" translatesAutoresizingMaskIntoConstraints="NO" id="LNC-4Q-KVP">
+                                            <rect key="frame" x="0.0" y="150" width="300" height="1"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="300" id="coc-Wg-f0V"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haC-EA-Kcq">
+                                    <rect key="frame" x="20" y="254" width="49" height="26.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVY-4h-Vay">
+                                    <rect key="frame" x="305" y="253.5" width="14" height="26.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rectangle906" translatesAutoresizingMaskIntoConstraints="NO" id="oSA-CZ-yGG">
+                                    <rect key="frame" x="70" y="226" width="150" height="5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="145" id="woo-fy-4gv"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yVY-4h-Vay" secondAttribute="trailing" constant="20" symbolic="YES" id="B1n-og-RpS"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="haC-EA-Kcq" secondAttribute="trailing" constant="20" symbolic="YES" id="Bwk-yw-u5V"/>
+                                <constraint firstItem="rt2-Vz-dzY" firstAttribute="centerX" secondItem="Tqa-BB-fvM" secondAttribute="centerX" id="I2Z-8u-c55"/>
+                                <constraint firstItem="haC-EA-Kcq" firstAttribute="top" secondItem="Gfq-CM-Uau" secondAttribute="bottom" constant="23" id="Jy2-nx-9SR"/>
+                                <constraint firstItem="Gfq-CM-Uau" firstAttribute="leading" secondItem="Tqa-BB-fvM" secondAttribute="leading" constant="70" id="MjI-Fs-3Vo"/>
+                                <constraint firstItem="oSA-CZ-yGG" firstAttribute="bottom" secondItem="Gfq-CM-Uau" secondAttribute="bottom" id="Na4-Or-20h"/>
+                                <constraint firstItem="rt2-Vz-dzY" firstAttribute="top" secondItem="Tqa-BB-fvM" secondAttribute="top" id="aQS-Ag-SII"/>
+                                <constraint firstItem="oSA-CZ-yGG" firstAttribute="leading" secondItem="Gfq-CM-Uau" secondAttribute="leading" id="fOc-AM-qgf"/>
+                                <constraint firstItem="yVY-4h-Vay" firstAttribute="leading" secondItem="haC-EA-Kcq" secondAttribute="trailing" constant="236" id="mu0-wB-Xw9"/>
+                                <constraint firstItem="haC-EA-Kcq" firstAttribute="leading" secondItem="Tqa-BB-fvM" secondAttribute="leading" constant="20" id="nP6-vG-3xp"/>
+                                <constraint firstAttribute="bottom" secondItem="yVY-4h-Vay" secondAttribute="bottom" constant="20" symbolic="YES" id="q9s-9O-pVZ"/>
+                                <constraint firstItem="Gfq-CM-Uau" firstAttribute="top" secondItem="rt2-Vz-dzY" secondAttribute="bottom" constant="15" id="rse-Me-EA8"/>
+                            </constraints>
+                        </view>
+                        <sections>
+                            <tableViewSection id="sC8-hm-cie">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="NHD-MN-tjq">
+                                        <rect key="frame" x="0.0" y="300" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NHD-MN-tjq" id="iTX-hc-GxB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="rGC-o4-MWy">
+                                                    <rect key="frame" x="7.5" y="0.0" width="360" height="120"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beef" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FtU-Pe-Eo5">
+                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="120" id="YF7-zR-MVC"/>
+                                                                <constraint firstAttribute="height" constant="120" id="aSu-zP-9KP"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chicken" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aH6-cp-uYq">
+                                                            <rect key="frame" x="120" y="0.0" width="120" height="120"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="120" id="FFr-4U-JHi"/>
+                                                                <constraint firstAttribute="height" constant="120" id="dOL-Ry-wWQ"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pork" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vbW-OS-hUv">
+                                                            <rect key="frame" x="240" y="0.0" width="120" height="120"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="120" id="SjU-Gg-XMx"/>
+                                                                <constraint firstAttribute="width" constant="120" id="nkQ-94-plt"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rGC-o4-MWy" firstAttribute="centerX" secondItem="iTX-hc-GxB" secondAttribute="centerX" id="2ol-LK-nsu"/>
+                                                <constraint firstItem="rGC-o4-MWy" firstAttribute="centerY" secondItem="iTX-hc-GxB" secondAttribute="centerY" id="eQN-dN-CuD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Pd5-q5-dhM">
+                                        <rect key="frame" x="0.0" y="420" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pd5-q5-dhM" id="IY1-ba-f4H">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="sWn-4B-um3">
+                                                    <rect key="frame" x="7.5" y="0.0" width="360" height="120"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chicken" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2lI-Af-s6b">
+                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="120" id="B9o-4c-Ij5"/>
+                                                                <constraint firstAttribute="height" constant="120" id="bOb-ZA-45c"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beef" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="507-WK-6Am">
+                                                            <rect key="frame" x="120" y="0.0" width="120" height="120"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="120" id="CTb-b2-Yr0"/>
+                                                                <constraint firstAttribute="height" constant="120" id="ZIO-qE-FKi"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pork" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="klK-aS-QLq">
+                                                            <rect key="frame" x="240" y="0.0" width="120" height="120"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="120" id="PwB-BF-Ygb"/>
+                                                                <constraint firstAttribute="height" constant="120" id="oXJ-Q5-sF0"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="sWn-4B-um3" firstAttribute="centerX" secondItem="IY1-ba-f4H" secondAttribute="centerX" id="7WA-bC-UtX"/>
+                                                <constraint firstItem="sWn-4B-um3" firstAttribute="centerY" secondItem="IY1-ba-f4H" secondAttribute="centerY" id="Nl5-xb-8Qt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="8el-qE-T8h">
+                                        <rect key="frame" x="0.0" y="540" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8el-qE-T8h" id="PcP-fR-qlt">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="TIt-PY-gbw">
+                                                    <rect key="frame" x="7.5" y="0.0" width="360" height="120"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pork" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6sj-TY-UOG">
+                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="120" id="gZB-3J-BsV"/>
+                                                                <constraint firstAttribute="height" constant="120" id="nRJ-AW-SmR"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chicken" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eeo-Pa-kHj">
+                                                            <rect key="frame" x="120" y="0.0" width="120" height="120"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="120" id="Ges-5C-rXA"/>
+                                                                <constraint firstAttribute="height" constant="120" id="hQd-9J-ZNE"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beef" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LqN-eE-cjb">
+                                                            <rect key="frame" x="240" y="0.0" width="120" height="120"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="120" id="GZQ-sb-3Md"/>
+                                                                <constraint firstAttribute="height" constant="120" id="rch-Et-sXr"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="TIt-PY-gbw" firstAttribute="centerX" secondItem="PcP-fR-qlt" secondAttribute="centerX" id="edW-z3-Lxy"/>
+                                                <constraint firstItem="TIt-PY-gbw" firstAttribute="centerY" secondItem="PcP-fR-qlt" secondAttribute="centerY" id="rWT-yb-0UO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wuq-U1-C74">
+                                        <rect key="frame" x="0.0" y="660" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wuq-U1-C74" id="UM7-AQ-o3p">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="iIh-hF-FFP">
+                                                    <rect key="frame" x="7.5" y="-0.5" width="360" height="120.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beef" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rM9-w9-1on">
+                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="120" id="QRf-oM-FFU"/>
+                                                                <constraint firstAttribute="height" constant="120" id="h5U-Y7-Z91"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chicken" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AiX-kI-miF">
+                                                            <rect key="frame" x="120" y="0.0" width="120" height="120.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="120" id="Asv-C1-5Pw"/>
+                                                                <constraint firstAttribute="width" constant="120" id="hiW-3U-C0r"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pork" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3m7-g2-ux0">
+                                                            <rect key="frame" x="240" y="0.0" width="120" height="120.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="120" id="dEK-sv-VMp"/>
+                                                                <constraint firstAttribute="height" constant="120" id="t8U-pP-tRR"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="iIh-hF-FFP" firstAttribute="centerX" secondItem="UM7-AQ-o3p" secondAttribute="centerX" id="3e0-q3-XG7"/>
+                                                <constraint firstItem="iIh-hF-FFP" firstAttribute="centerY" secondItem="UM7-AQ-o3p" secondAttribute="centerY" id="XBo-gT-baD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="DM5-Zo-qhZ">
+                                        <rect key="frame" x="0.0" y="780" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DM5-Zo-qhZ" id="EOu-K3-Aa4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="qbn-ki-bkn">
+                                                    <rect key="frame" x="7.5" y="-0.5" width="360" height="120.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chicken" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7fW-Ey-Mwf">
+                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="120" id="bji-Vz-c74"/>
+                                                                <constraint firstAttribute="height" constant="120" id="kPo-4z-O3X"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pork" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ni9-0s-9fY">
+                                                            <rect key="frame" x="120" y="0.0" width="120" height="120.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="120" id="0b4-6Z-uhX"/>
+                                                                <constraint firstAttribute="height" constant="120" id="9Gp-3e-18t"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beef" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7yw-hb-z6k">
+                                                            <rect key="frame" x="240" y="0.0" width="120" height="120.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="120" id="6Xs-pi-iIQ"/>
+                                                                <constraint firstAttribute="height" constant="120" id="LbD-cA-xnT"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qbn-ki-bkn" firstAttribute="centerX" secondItem="EOu-K3-Aa4" secondAttribute="centerX" id="9iv-zP-7hI"/>
+                                                <constraint firstItem="qbn-ki-bkn" firstAttribute="centerY" secondItem="EOu-K3-Aa4" secondAttribute="centerY" id="O5l-O6-vif"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="CrA-Vb-v9s">
+                                        <rect key="frame" x="0.0" y="900" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CrA-Vb-v9s" id="OC2-cJ-5Z7">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="cui-n7-aOZ">
+                                                    <rect key="frame" x="7.5" y="-0.5" width="360" height="120.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pork" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jP5-jv-zzU">
+                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="120" id="4z6-Eh-PwP"/>
+                                                                <constraint firstAttribute="height" constant="120" id="mbO-hh-FLJ"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chicken" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f2A-bU-mHg">
+                                                            <rect key="frame" x="120" y="0.0" width="120" height="120.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="120" id="LHh-a8-QCl"/>
+                                                                <constraint firstAttribute="width" constant="120" id="PLS-ac-J2x"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beef" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b14-vT-EqH">
+                                                            <rect key="frame" x="240" y="0.0" width="120" height="120.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="120" id="VKl-6p-rin"/>
+                                                                <constraint firstAttribute="height" constant="120" id="YmX-Ne-aLz"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cui-n7-aOZ" firstAttribute="centerY" secondItem="OC2-cJ-5Z7" secondAttribute="centerY" id="cSo-QL-rkm"/>
+                                                <constraint firstItem="cui-n7-aOZ" firstAttribute="centerX" secondItem="OC2-cJ-5Z7" secondAttribute="centerX" id="hiw-3p-EUY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Hph-TI-eFa">
+                                        <rect key="frame" x="0.0" y="1020" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hph-TI-eFa" id="Gdk-xL-H1F">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="0lg-Qh-Bii">
+                                                    <rect key="frame" x="7.5" y="-0.5" width="360" height="120.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beef" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8gA-xV-VcY">
+                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="120" id="fLG-Pl-UuC"/>
+                                                                <constraint firstAttribute="width" constant="120" id="uUo-sP-wXH"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chicken" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EBK-dN-7oF">
+                                                            <rect key="frame" x="120" y="0.0" width="120" height="120.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="120" id="5st-QU-kbF"/>
+                                                                <constraint firstAttribute="width" constant="120" id="iBz-34-pE1"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pork" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iaK-Qb-cuw">
+                                                            <rect key="frame" x="240" y="0.0" width="120" height="120.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="120" id="eHx-bm-hf2"/>
+                                                                <constraint firstAttribute="height" constant="120" id="iKP-AE-rgq"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0lg-Qh-Bii" firstAttribute="centerX" secondItem="Gdk-xL-H1F" secondAttribute="centerX" id="37v-ns-eYp"/>
+                                                <constraint firstItem="0lg-Qh-Bii" firstAttribute="centerY" secondItem="Gdk-xL-H1F" secondAttribute="centerY" id="apw-Qg-6da"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="MS2-7p-PbO" id="KQy-N8-99V"/>
+                            <outlet property="delegate" destination="MS2-7p-PbO" id="kBd-YM-sUF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Combine" id="fBT-jl-y33">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="icMenu" id="IRv-6N-9vC">
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uzo-EL-bKS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1324" y="-53"/>
         </scene>
     </scenes>
     <resources>
@@ -321,4 +740,8 @@ fatty acids.</string>
         <image name="rectangle891" width="638" height="1"/>
         <image name="rectangle906" width="375" height="5"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Jzt-WQ-Ldy"/>
+        <segue reference="7OJ-7S-UGP"/>
+    </inferredMetricsTieBreakers>
 </document>
