@@ -33,3 +33,18 @@ let backgroundView = UIView(frame: starImageView.frame)
 backgroundView.addSubview(starImageView3)
 backgroundView.addSubview(fireImageView)
 backgroundView
+
+// pic 4
+let starImage4 = UIImage(named: "star.png")
+let starImageView4 = UIImageView(image: starImage4)
+let aquariusImage1 = UIImage(named: "aquarius.png")
+let aquariusImageView1 = UIImageView(image: aquariusImage1)
+starImageView4.mask = aquariusImageView1
+
+let blueView4 = UIView(frame: aquariusImageView1.frame)
+blueView4.backgroundColor = UIColor(red: 0/255, green: 255/255, blue: 255/255, alpha: 0.5)
+let aquariusImage2 = UIImage(named: "aquarius.png")
+let aquariusImageView2 = UIImageView(image: aquariusImage2)
+blueView4.mask = aquariusImageView2
+starImageView4.addSubview(blueView4)
+starImageView4
