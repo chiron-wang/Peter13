@@ -6,3 +6,5 @@
 ## 2019/9/6
 ![image](https://github.com/chiron-wang/Peter13/blob/exercise/BlogImage/Playground/Wukong.png)
 
+## 2019/9/7
+![image](https://github.com/chiron-wang/Peter13/blob/exercise/BlogImage/Playground/taurusImage3.png)
