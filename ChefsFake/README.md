@@ -6,3 +6,7 @@
 
 # Grid Photo Wall
 ![image](https://github.com/chiron-wang/Peter13/blob/exercise/BlogImage/ChefsFake/PhotoWall.png)
+
+# SharpImageView
+![image](https://github.com/chiron-wang/Peter13/blob/exercise/BlogImage/ChefsFake/SharpImageView.png)
+

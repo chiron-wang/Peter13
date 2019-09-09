@@ -323,7 +323,7 @@ fatty acids.</string>
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beef" translatesAutoresizingMaskIntoConstraints="NO" id="HRu-h6-ZWk">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beef" translatesAutoresizingMaskIntoConstraints="NO" id="HRu-h6-ZWk" customClass="SharpImageView" customModule="ChefsFake" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 </imageView>
                                             </subviews>
@@ -956,7 +956,7 @@ and recipe come to you by itself.</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="7OJ-7S-UGP"/>
-        <segue reference="v4o-2L-sTx"/>
+        <segue reference="OUK-It-X7R"/>
         <segue reference="ikv-mf-3fF"/>
     </inferredMetricsTieBreakers>
 </document>
