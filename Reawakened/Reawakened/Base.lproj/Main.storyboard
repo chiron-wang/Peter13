@@ -268,7 +268,7 @@ An Ancient Egyptian Love Poem</string>
         <!--Poem2-->
         <scene sceneID="duP-I4-oKc">
             <objects>
-                <viewController title="Poem2" id="ydk-hz-ZqP" sceneMemberID="viewController">
+                <viewController title="Poem2" id="ydk-hz-ZqP" customClass="PoemViewController" customModule="Reawakened" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QLZ-zo-tAe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -318,12 +318,12 @@ I will arise and break the bands of Death.</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Poem2" translatesAutoresizingMaskIntoConstraints="NO" id="ziX-o9-lkO">
-                                <rect key="frame" x="0.0" y="160" width="414" height="182"/>
+                                <rect key="frame" x="0.0" y="152" width="414" height="190"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ziX-o9-lkO" firstAttribute="top" secondItem="E99-YC-3rh" secondAttribute="bottom" constant="8" symbolic="YES" id="2t1-Bb-2uK"/>
+                            <constraint firstItem="ziX-o9-lkO" firstAttribute="top" secondItem="E99-YC-3rh" secondAttribute="bottom" id="2t1-Bb-2uK"/>
                             <constraint firstItem="E99-YC-3rh" firstAttribute="top" secondItem="hJV-Sr-Ici" secondAttribute="top" id="7AE-cE-rOL"/>
                             <constraint firstItem="hJV-Sr-Ici" firstAttribute="bottom" secondItem="ziX-o9-lkO" secondAttribute="bottom" constant="345" id="Tjc-4G-vgP"/>
                             <constraint firstAttribute="trailing" secondItem="E99-YC-3rh" secondAttribute="trailing" id="Tpj-1J-ZRg"/>
@@ -336,6 +336,9 @@ I will arise and break the bands of Death.</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hJV-Sr-Ici"/>
                     </view>
+                    <connections>
+                        <outlet property="poemTextView" destination="GBY-sA-Gpw" id="hpX-70-v2t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjh-JU-FGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -344,7 +347,7 @@ I will arise and break the bands of Death.</string>
         <!--Poem3-->
         <scene sceneID="Pnj-nw-seh">
             <objects>
-                <viewController title="Poem3" id="RTr-h2-tlZ" sceneMemberID="viewController">
+                <viewController title="Poem3" id="RTr-h2-tlZ" customClass="PoemViewController" customModule="Reawakened" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bdf-Xx-f97">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -359,7 +362,7 @@ I will arise and break the bands of Death.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Poem3" translatesAutoresizingMaskIntoConstraints="NO" id="BjQ-OJ-PK1">
-                                <rect key="frame" x="0.0" y="122" width="414" height="195"/>
+                                <rect key="frame" x="0.0" y="114" width="414" height="203"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3N8-Y5-o7C">
                                 <rect key="frame" x="0.0" y="324" width="414" height="412"/>
@@ -395,7 +398,7 @@ Within the snare of love.</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="BjQ-OJ-PK1" firstAttribute="top" secondItem="j9M-wk-6P3" secondAttribute="bottom" constant="8" symbolic="YES" id="0bi-61-Jr5"/>
+                            <constraint firstItem="BjQ-OJ-PK1" firstAttribute="top" secondItem="j9M-wk-6P3" secondAttribute="bottom" id="0bi-61-Jr5"/>
                             <constraint firstItem="j9M-wk-6P3" firstAttribute="trailing" secondItem="3N8-Y5-o7C" secondAttribute="trailing" id="ARK-00-YsC"/>
                             <constraint firstAttribute="trailing" secondItem="BjQ-OJ-PK1" secondAttribute="trailing" id="Ni4-rE-ggq"/>
                             <constraint firstItem="j9M-wk-6P3" firstAttribute="leading" secondItem="Bdf-Xx-f97" secondAttribute="leading" id="QA0-ZX-sCt"/>
@@ -408,6 +411,9 @@ Within the snare of love.</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qd8-Hu-EmG"/>
                     </view>
+                    <connections>
+                        <outlet property="poemTextView" destination="3N8-Y5-o7C" id="kX2-y7-KXr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bZ9-I9-Csk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -416,7 +422,7 @@ Within the snare of love.</string>
         <!--Poem1-->
         <scene sceneID="6AH-RG-NI8">
             <objects>
-                <viewController title="Poem1" id="Ovt-va-U9u" sceneMemberID="viewController">
+                <viewController title="Poem1" id="Ovt-va-U9u" customClass="PoemViewController" customModule="Reawakened" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wdZ-bp-FAg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1419,7 +1425,7 @@ Cg
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Poem1" translatesAutoresizingMaskIntoConstraints="NO" id="pI4-Gs-rkc">
-                                <rect key="frame" x="0.0" y="147" width="414" height="191.00000000000011"/>
+                                <rect key="frame" x="0.0" y="139" width="414" height="199"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1428,7 +1434,7 @@ Cg
                             <constraint firstAttribute="trailing" secondItem="2Rn-J6-QTO" secondAttribute="trailing" id="DR9-dg-kxh"/>
                             <constraint firstItem="2Rn-J6-QTO" firstAttribute="leading" secondItem="wdZ-bp-FAg" secondAttribute="leading" id="G81-YB-8z4"/>
                             <constraint firstAttribute="leading" secondItem="pI4-Gs-rkc" secondAttribute="leading" id="Q9B-Cz-F22"/>
-                            <constraint firstItem="pI4-Gs-rkc" firstAttribute="top" secondItem="2Rn-J6-QTO" secondAttribute="bottom" constant="8" symbolic="YES" id="VHs-2p-GPs"/>
+                            <constraint firstItem="pI4-Gs-rkc" firstAttribute="top" secondItem="2Rn-J6-QTO" secondAttribute="bottom" id="VHs-2p-GPs"/>
                             <constraint firstItem="2Rn-J6-QTO" firstAttribute="top" secondItem="xvQ-Df-3td" secondAttribute="top" id="WDD-rw-ohN"/>
                             <constraint firstAttribute="trailing" secondItem="pI4-Gs-rkc" secondAttribute="trailing" id="XCl-0G-W21"/>
                             <constraint firstItem="2Rn-J6-QTO" firstAttribute="trailing" secondItem="yPw-W1-mS6" secondAttribute="trailing" id="Y8g-RN-e6t"/>
@@ -1437,6 +1443,9 @@ Cg
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xvQ-Df-3td"/>
                     </view>
+                    <connections>
+                        <outlet property="poemTextView" destination="yPw-W1-mS6" id="hNv-0W-fJd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NHp-57-6cM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
