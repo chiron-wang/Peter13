@@ -318,21 +318,21 @@ I will arise and break the bands of Death.</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Poem2" translatesAutoresizingMaskIntoConstraints="NO" id="ziX-o9-lkO">
-                                <rect key="frame" x="0.0" y="147" width="414" height="195"/>
+                                <rect key="frame" x="0.0" y="160" width="414" height="182"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ziX-o9-lkO" firstAttribute="top" secondItem="hJV-Sr-Ici" secondAttribute="top" constant="83" id="2t1-Bb-2uK"/>
+                            <constraint firstItem="ziX-o9-lkO" firstAttribute="top" secondItem="E99-YC-3rh" secondAttribute="bottom" constant="8" symbolic="YES" id="2t1-Bb-2uK"/>
                             <constraint firstItem="E99-YC-3rh" firstAttribute="top" secondItem="hJV-Sr-Ici" secondAttribute="top" id="7AE-cE-rOL"/>
                             <constraint firstItem="hJV-Sr-Ici" firstAttribute="bottom" secondItem="ziX-o9-lkO" secondAttribute="bottom" constant="345" id="Tjc-4G-vgP"/>
                             <constraint firstAttribute="trailing" secondItem="E99-YC-3rh" secondAttribute="trailing" id="Tpj-1J-ZRg"/>
                             <constraint firstItem="E99-YC-3rh" firstAttribute="leading" secondItem="QLZ-zo-tAe" secondAttribute="leading" id="Wsd-Zx-cP8"/>
                             <constraint firstAttribute="bottom" secondItem="GBY-sA-Gpw" secondAttribute="bottom" id="acr-Kf-ReU"/>
-                            <constraint firstItem="E99-YC-3rh" firstAttribute="leading" secondItem="ziX-o9-lkO" secondAttribute="leading" id="dEk-yc-KPW"/>
+                            <constraint firstAttribute="leading" secondItem="ziX-o9-lkO" secondAttribute="leading" id="dEk-yc-KPW"/>
                             <constraint firstItem="E99-YC-3rh" firstAttribute="trailing" secondItem="GBY-sA-Gpw" secondAttribute="trailing" id="fSP-Pc-8qZ"/>
                             <constraint firstItem="E99-YC-3rh" firstAttribute="leading" secondItem="GBY-sA-Gpw" secondAttribute="leading" id="iWE-WO-owi"/>
-                            <constraint firstItem="E99-YC-3rh" firstAttribute="trailing" secondItem="ziX-o9-lkO" secondAttribute="trailing" id="xr7-KA-GyS"/>
+                            <constraint firstAttribute="trailing" secondItem="ziX-o9-lkO" secondAttribute="trailing" id="xr7-KA-GyS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hJV-Sr-Ici"/>
                     </view>
@@ -397,14 +397,14 @@ Within the snare of love.</string>
                         <constraints>
                             <constraint firstItem="BjQ-OJ-PK1" firstAttribute="top" secondItem="j9M-wk-6P3" secondAttribute="bottom" constant="8" symbolic="YES" id="0bi-61-Jr5"/>
                             <constraint firstItem="j9M-wk-6P3" firstAttribute="trailing" secondItem="3N8-Y5-o7C" secondAttribute="trailing" id="ARK-00-YsC"/>
-                            <constraint firstItem="j9M-wk-6P3" firstAttribute="trailing" secondItem="BjQ-OJ-PK1" secondAttribute="trailing" id="Ni4-rE-ggq"/>
+                            <constraint firstAttribute="trailing" secondItem="BjQ-OJ-PK1" secondAttribute="trailing" id="Ni4-rE-ggq"/>
                             <constraint firstItem="j9M-wk-6P3" firstAttribute="leading" secondItem="Bdf-Xx-f97" secondAttribute="leading" id="QA0-ZX-sCt"/>
                             <constraint firstItem="j9M-wk-6P3" firstAttribute="top" secondItem="qd8-Hu-EmG" secondAttribute="top" id="R1e-uW-qKl"/>
                             <constraint firstItem="j9M-wk-6P3" firstAttribute="leading" secondItem="3N8-Y5-o7C" secondAttribute="leading" id="RZb-5t-aDw"/>
                             <constraint firstItem="3N8-Y5-o7C" firstAttribute="top" secondItem="BjQ-OJ-PK1" secondAttribute="bottom" constant="7" id="bAI-ZQ-lcq"/>
                             <constraint firstAttribute="trailing" secondItem="j9M-wk-6P3" secondAttribute="trailing" id="jm2-z1-tDP"/>
                             <constraint firstAttribute="bottom" secondItem="3N8-Y5-o7C" secondAttribute="bottom" id="sbE-gm-lse"/>
-                            <constraint firstItem="j9M-wk-6P3" firstAttribute="leading" secondItem="BjQ-OJ-PK1" secondAttribute="leading" id="zGb-ce-kvd"/>
+                            <constraint firstAttribute="leading" secondItem="BjQ-OJ-PK1" secondAttribute="leading" id="zGb-ce-kvd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qd8-Hu-EmG"/>
                     </view>
@@ -1419,17 +1419,18 @@ Cg
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Poem1" translatesAutoresizingMaskIntoConstraints="NO" id="pI4-Gs-rkc">
-                                <rect key="frame" x="0.0" y="147" width="414" height="725.00000000000011"/>
+                                <rect key="frame" x="0.0" y="147" width="414" height="191.00000000000011"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="yPw-W1-mS6" firstAttribute="top" secondItem="pI4-Gs-rkc" secondAttribute="bottom" id="9VJ-aM-ntj"/>
                             <constraint firstAttribute="trailing" secondItem="2Rn-J6-QTO" secondAttribute="trailing" id="DR9-dg-kxh"/>
                             <constraint firstItem="2Rn-J6-QTO" firstAttribute="leading" secondItem="wdZ-bp-FAg" secondAttribute="leading" id="G81-YB-8z4"/>
-                            <constraint firstItem="2Rn-J6-QTO" firstAttribute="leading" secondItem="pI4-Gs-rkc" secondAttribute="leading" id="Q9B-Cz-F22"/>
+                            <constraint firstAttribute="leading" secondItem="pI4-Gs-rkc" secondAttribute="leading" id="Q9B-Cz-F22"/>
                             <constraint firstItem="pI4-Gs-rkc" firstAttribute="top" secondItem="2Rn-J6-QTO" secondAttribute="bottom" constant="8" symbolic="YES" id="VHs-2p-GPs"/>
                             <constraint firstItem="2Rn-J6-QTO" firstAttribute="top" secondItem="xvQ-Df-3td" secondAttribute="top" id="WDD-rw-ohN"/>
-                            <constraint firstItem="2Rn-J6-QTO" firstAttribute="trailing" secondItem="pI4-Gs-rkc" secondAttribute="trailing" id="XCl-0G-W21"/>
+                            <constraint firstAttribute="trailing" secondItem="pI4-Gs-rkc" secondAttribute="trailing" id="XCl-0G-W21"/>
                             <constraint firstItem="2Rn-J6-QTO" firstAttribute="trailing" secondItem="yPw-W1-mS6" secondAttribute="trailing" id="Y8g-RN-e6t"/>
                             <constraint firstItem="2Rn-J6-QTO" firstAttribute="leading" secondItem="yPw-W1-mS6" secondAttribute="leading" id="ecc-nz-qmd"/>
                             <constraint firstAttribute="bottom" secondItem="yPw-W1-mS6" secondAttribute="bottom" id="vfh-dp-7yQ"/>
